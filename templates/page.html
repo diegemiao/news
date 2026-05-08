@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, max-age=0, must-revalidate">
 <title>{{PERIOD}}新闻速递 &middot; {{DATE}}</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v={{VERSION}}">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#1a1a2e">
 </head>
@@ -55,6 +56,6 @@
 </div>
 
 <script>window.newsData = {{NEWS_DATA}};</script>
-<script src="app.js"></script>
+<script src="app.js?v={{VERSION}}"></script>
 </body>
 </html>

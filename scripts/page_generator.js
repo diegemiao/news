@@ -67,6 +67,7 @@ function generatePage(articles, dateStr, isMorning = true) {
 
   const dataJson = JSON.stringify(newsData);
 
+  const version = Date.now().toString(36);
   const html = template
     .replaceAll('{{DATE}}', dateStr)
     .replaceAll('{{PERIOD}}', isMorning ? '早间' : '晚间')
@@ -74,6 +75,7 @@ function generatePage(articles, dateStr, isMorning = true) {
     .replaceAll('{{TABS}}', tabsHtml)
     .replaceAll('{{ARTICLES}}', articlesHtml)
     .replaceAll('{{GENERATED_TIME}}', new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' }))
+    .replaceAll('{{VERSION}}', version)
     .replaceAll('{{NEWS_DATA}}', dataJson);
 
   fs.writeFileSync(path.join(DOCS_DIR, 'index.html'), html, 'utf-8');
