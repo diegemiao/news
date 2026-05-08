@@ -24,12 +24,13 @@ async function fetchFeed(feedConfig, settings) {
       const feed = await parser.parseURL(feedConfig.url);
       const articles = (feed.items || []).slice(0, limit).map(item => {
         const rawTitle = item.title || '';
-        const snippet = stripHtml(item.contentSnippet || item.content || '');
+        const fullText = stripHtml(item.contentSnippet || item.content || '');
         return {
         guid: item.guid || item.link || '',
-        title: buildTitle(rawTitle, snippet, feedConfig.name),
+        title: buildTitle(rawTitle, fullText, feedConfig.name),
         url: item.link || '',
-        summary: snippet.substring(0, 120).replace(/\s+\S*$/, '') + '…',
+        summary: truncate(fullText, 100),
+        full_summary: truncate(fullText, 2000),
         comments: parseCommentCount(item),
         source_name: feedConfig.name,
         source_id: feedConfig.id,
@@ -69,6 +70,7 @@ async function fetchFeedApi(feedConfig) {
       title: buildTitle(item.title || '', '', ''),
       url: item.link || item.url || '',
       summary: (item.hot_value || item.热度) ? `热度 ${formatHeat(item.hot_value || item.热度)}` : '',
+      full_summary: '',
       comments: parseInt(item.hot_value || item.热度, 10) || 0,
       source_name: feedConfig.name,
       source_id: feedConfig.id,
@@ -91,7 +93,8 @@ async function fetchFeedApi(feedConfig) {
       guid: item.id || item.url,
       title,
       url: item.url || '',
-      summary: summary.substring(0, 120).replace(/\s+\S*$/, '') + '…',
+      summary: truncate(summary, 100),
+      full_summary: truncate(summary, 2000),
       comments: 0,
       source_name: feedConfig.name,
       source_id: feedConfig.id,
@@ -152,6 +155,11 @@ async function fetchAllFeeds(feeds, settings) {
   });
 
   return articles;
+}
+
+function truncate(text, maxLen) {
+  if (!text || text.length <= maxLen) return text || '';
+  return text.substring(0, maxLen).replace(/\s+\S*$/, '') + '…';
 }
 
 function stripHtml(str) {

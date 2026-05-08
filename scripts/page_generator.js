@@ -15,7 +15,8 @@ function generatePage(articles, dateStr, isMorning = true) {
     return `<button class="tab" data-cat="${cat}">${cat}<span class="tab-count">${count}</span></button>`;
   }).join('\n    ');
 
-  // Numbered articles by category section
+  // Build flat article array matching global numbering
+  const newsData = [null]; // 1-indexed
   let num = 0;
   let articlesHtml = '';
   for (const [category, arts] of Object.entries(grouped)) {
@@ -27,9 +28,10 @@ function generatePage(articles, dateStr, isMorning = true) {
       articlesHtml += '<div class="hot-pills">';
       for (const a of arts) {
         num++;
+        newsData[num] = { t: a.title, u: a.url, s: a.source_name, ti: formatTime(a.published), f: a.full_summary || '' };
         const plat = a.source_name.replace('热搜', '').replace('热榜', '');
         articlesHtml += `
-          <a href="${a.url}" target="_blank" rel="noopener" class="hot-pill">
+          <a onclick="openNewsModal(${num});return false" href="${a.url}" target="_blank" rel="noopener" class="hot-pill">
             <span class="hot-pill-rank">${num}</span>
             <span class="hot-pill-platform">${plat}</span>
             <span class="hot-pill-title">${a.title}</span>
@@ -40,6 +42,7 @@ function generatePage(articles, dateStr, isMorning = true) {
     } else {
       for (const a of arts) {
         num++;
+        newsData[num] = { t: a.title, u: a.url, s: a.source_name, ti: formatTime(a.published), f: a.full_summary || a.summary || '' };
         const badge = a.high_discussion
           ? `<span class="card-badge">精选</span>`
           : (a.quality_score >= 70 ? `<span class="card-badge score">高质</span>` : '');
@@ -53,7 +56,7 @@ function generatePage(articles, dateStr, isMorning = true) {
               ${badge}
               <span class="card-time">${formatTime(a.published)}</span>
             </div>
-            <h3 class="card-title"><a href="${a.url}" target="_blank" rel="noopener">${a.title}</a></h3>
+            <h3 class="card-title"><a href="${a.url}" onclick="openNewsModal(${num});return false" rel="noopener">${a.title}</a></h3>
             <p class="card-summary">${a.summary}</p>
           </div>
         </article>`;
@@ -62,13 +65,16 @@ function generatePage(articles, dateStr, isMorning = true) {
     articlesHtml += '</section>';
   }
 
+  const dataJson = JSON.stringify(newsData);
+
   const html = template
     .replaceAll('{{DATE}}', dateStr)
     .replaceAll('{{PERIOD}}', isMorning ? '早间' : '晚间')
     .replaceAll('{{COUNT}}', articles.length)
     .replaceAll('{{TABS}}', tabsHtml)
     .replaceAll('{{ARTICLES}}', articlesHtml)
-    .replaceAll('{{GENERATED_TIME}}', new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' }));
+    .replaceAll('{{GENERATED_TIME}}', new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' }))
+    .replaceAll('{{NEWS_DATA}}', dataJson);
 
   fs.writeFileSync(path.join(DOCS_DIR, 'index.html'), html, 'utf-8');
   return html;
