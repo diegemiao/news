@@ -115,26 +115,15 @@ function isConfigured() {
 }
 
 async function triggerPipeline() {
-  const pat = process.env.GH_PAT;
-  if (!pat) {
-    console.error('[飞书] GH_PAT not set, cannot trigger pipeline');
+  // Use gh CLI with Actions GITHUB_TOKEN (requires actions:write permission in workflow)
+  const { execSync } = require('child_process');
+  try {
+    execSync('gh workflow run daily-news.yml --repo diegemiao/news', { stdio: 'pipe' });
+    return true;
+  } catch (e) {
+    console.error(`[飞书] 触发 pipeline 失败: ${e.message}`);
     return false;
   }
-  const res = await fetch(
-    'https://api.github.com/repos/diegemiao/news/actions/workflows/daily-news.yml/dispatches',
-    {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${pat}`,
-        'Accept': 'application/vnd.github+json',
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ ref: 'master' })
-    }
-  );
-  if (res.status === 204) return true;
-  console.error(`[飞书] 触发 pipeline 失败: HTTP ${res.status}`);
-  return false;
 }
 
 // --- Main entry point for polling ---
