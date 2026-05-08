@@ -76,6 +76,12 @@ async function main() {
     generatePage(displayArticles, dateStr, isMorning);
     console.log('  网页 → docs/index.html');
     await sendDigestEmail(displayArticles, dateStr, isMorning);
+    // Feishu notification (non-blocking)
+    const { exec } = require('child_process');
+    const label = `${isMorning ? '早间' : '晚间'}新闻速递 | ${dateStr} · ${displayArticles.length}篇`;
+    exec(`node scripts/feishu.js --send-link "https://diegemiao.github.io/news/" "${label}"`, (err) => {
+      if (err) { /* feishu not configured — skip */ }
+    });
   } else {
     console.log('  无时效内文章，跳过生成');
   }

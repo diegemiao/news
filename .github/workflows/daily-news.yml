@@ -43,6 +43,9 @@ jobs:
           SMTP_USER: ${{ secrets.SMTP_USER }}
           SMTP_PASS: ${{ secrets.SMTP_PASS }}
           EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
+          FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
+          FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
           GITHUB_PAGES_URL: ${{ vars.GITHUB_PAGES_URL || 'https://<user>.github.io/news/' }}
           GITEE_PAGES_URL: ${{ vars.GITEE_PAGES_URL || 'https://<user>.gitee.io/news/' }}
         run: node scripts/main.js
