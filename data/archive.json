@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-05-08T16:01:21.740Z",
+  "last_pruned": "2026-05-08T16:05:47.982Z",
   "seen": {
     "aihot": {
       "guid:cmownduwl00kdslkuwxyxo7l7": 1778230993.092,
@@ -301,7 +301,13 @@
       "hash:e3b7ca6c": 1778255361.352,
       "guid:https://www.ithome.com/0/947/982.htm": 1778255361.352,
       "url:https://www.ithome.com/0/947/982.htm": 1778255361.352,
-      "hash:9305e8b6": 1778255361.352
+      "hash:9305e8b6": 1778255361.352,
+      "guid:https://www.ithome.com/0/947/988.htm": 1778256346.462,
+      "url:https://www.ithome.com/0/947/988.htm": 1778256346.462,
+      "hash:a4710445": 1778256346.462,
+      "guid:https://www.ithome.com/0/947/987.htm": 1778256346.462,
+      "url:https://www.ithome.com/0/947/987.htm": 1778256346.462,
+      "hash:3941661b": 1778256346.462
     },
     "v2ex-hot": {
       "guid:https://v2ex.com/t/1211033": 1778230993.107,
@@ -802,7 +808,10 @@
       "hash:6dec1f77": 1778250470.145,
       "guid:https://www.douyin.com/search/%E4%B8%8A%E6%B5%B7%E5%B0%86%E6%89%BF%E5%8A%9E2028%E5%A5%A5%E8%BF%90%E4%BC%9A%E8%B5%84%E6%A0%BC%E7%B3%BB%E5%88%97%E8%B5%9B": 1778256080.3,
       "url:https://www.douyin.com/search/%E4%B8%8A%E6%B5%B7%E5%B0%86%E6%89%BF%E5%8A%9E2028%E5%A5%A5%E8%BF%90%E4%BC%9A%E8%B5%84%E6%A0%BC%E7%B3%BB%E5%88%97%E8%B5%9B": 1778256080.3,
-      "hash:94a41c85": 1778256080.3
+      "hash:94a41c85": 1778256080.3,
+      "guid:https://www.douyin.com/search/%E4%BB%80%E4%B9%88%E6%98%AF%E9%94%81%E7%94%B5": 1778256346.463,
+      "url:https://www.douyin.com/search/%E4%BB%80%E4%B9%88%E6%98%AF%E9%94%81%E7%94%B5": 1778256346.463,
+      "hash:a6639a12": 1778256346.463
     },
     "toutiao": {
       "guid:hot-香港1.7亿人民币拿下世界杯转播权": 1778230993.113,
@@ -1477,7 +1486,13 @@
       "hash:c871a506": 1778250470.146,
       "guid:3100773": 1778250470.146,
       "url:https://wallstreetcn.com/livenews/3100773": 1778250470.146,
-      "hash:0567007a": 1778250470.146
+      "hash:0567007a": 1778250470.146,
+      "guid:3771866": 1778256346.464,
+      "url:https://wallstreetcn.com/articles/3771866": 1778256346.464,
+      "hash:cbba4f0f": 1778256346.464,
+      "guid:3771867": 1778256346.464,
+      "url:https://wallstreetcn.com/articles/3771867": 1778256346.464,
+      "hash:1a4a55e8": 1778256346.464
     },
     "caixin": {
       "guid:caixin:latest:https://www.caixin.com/2026-05-08/102442045.html": 1778235316.531,
@@ -1699,7 +1714,19 @@
       "hash:c585273d": 1778255361.354,
       "guid:639131383": 1778255361.354,
       "url:https://m.hupu.com/bbs/639131383": 1778255361.354,
-      "hash:87babb79": 1778255361.354
+      "hash:87babb79": 1778255361.354,
+      "guid:639131626": 1778256346.465,
+      "url:https://m.hupu.com/bbs/639131626": 1778256346.465,
+      "hash:2101295c": 1778256346.465,
+      "guid:639131584": 1778256346.465,
+      "url:https://m.hupu.com/bbs/639131584": 1778256346.465,
+      "hash:8043f50f": 1778256346.465,
+      "guid:639131567": 1778256346.465,
+      "url:https://m.hupu.com/bbs/639131567": 1778256346.465,
+      "hash:fa24de54": 1778256346.465,
+      "guid:639131503": 1778256346.465,
+      "url:https://m.hupu.com/bbs/639131503": 1778256346.465,
+      "hash:02fbb24e": 1778256346.465
     },
     "thepaper": {
       "guid:https://m.thepaper.cn/detail/33122989": 1778235316.532,
@@ -1815,7 +1842,16 @@
       "hash:4e0715fa": 1778255361.354,
       "guid:https://m.thepaper.cn/detail/33127648": 1778255361.354,
       "url:https://m.thepaper.cn/detail/33127648": 1778255361.354,
-      "hash:11a3f231": 1778255361.354
+      "hash:11a3f231": 1778255361.354,
+      "guid:https://m.thepaper.cn/detail/33129040": 1778256346.465,
+      "url:https://m.thepaper.cn/detail/33129040": 1778256346.465,
+      "hash:e9cf6a92": 1778256346.465,
+      "guid:https://m.thepaper.cn/detail/33128898": 1778256346.465,
+      "url:https://m.thepaper.cn/detail/33128898": 1778256346.465,
+      "hash:41727565": 1778256346.465,
+      "guid:https://m.thepaper.cn/detail/33128783": 1778256346.465,
+      "url:https://m.thepaper.cn/detail/33128783": 1778256346.465,
+      "hash:f4dc622c": 1778256346.465
     },
     "guokr": {
       "guid:https://www.guokr.com/article/469110/": 1778235934.81,
@@ -2066,7 +2102,13 @@
       "hash:0bba2237": 1778255361.354,
       "guid:https://bbs.hupu.com/639131379.html": 1778255361.354,
       "url:https://bbs.hupu.com/639131379.html": 1778255361.354,
-      "hash:f6775838": 1778255361.354
+      "hash:f6775838": 1778255361.354,
+      "guid:https://bbs.hupu.com/639131540.html": 1778256346.465,
+      "url:https://bbs.hupu.com/639131540.html": 1778256346.465,
+      "hash:fc270951": 1778256346.465,
+      "guid:https://bbs.hupu.com/639131501.html": 1778256346.465,
+      "url:https://bbs.hupu.com/639131501.html": 1778256346.465,
+      "hash:e50e601c": 1778256346.465
     }
   }
 }
