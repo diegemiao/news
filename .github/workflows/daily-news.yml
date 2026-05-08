@@ -6,7 +6,7 @@ on:
       timezone: 'Asia/Shanghai'
   workflow_dispatch:
   push:
-    branches: [main]
+    branches: [master]
     paths:
       - 'scripts/**'
       - 'templates/**'
@@ -16,6 +16,11 @@ on:
 concurrency:
   group: news-digest
   cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   fetch-and-publish:
@@ -51,5 +56,5 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "$(date +%Y-%m-%d) 新闻速递自动更新"
-            git push origin main
+            git push origin master
           fi
