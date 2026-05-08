@@ -63,8 +63,9 @@ jobs:
           # Save generated files away, then pull latest
           cp docs/index.html /tmp/index.html
           cp data/archive.json /tmp/archive.json
-          git stash push -- docs/index.html data/archive.json 2>/dev/null || true
+          git stash --include-untracked
           git pull --rebase origin master
+          git stash pop || true
           # Always use our freshly generated content
           cp /tmp/index.html docs/index.html
           cp /tmp/archive.json data/archive.json
