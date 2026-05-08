@@ -91,7 +91,8 @@ async function main() {
       const { sendText, isConfigured } = require('./feishu');
       if (isConfigured()) {
         const label = `${isMorning ? '早间' : '晚间'}新闻速递 | ${dateStr} · ${displayArticles.length}篇`;
-        await sendText(process.env.FEISHU_CHAT_ID, `📰 ${label}\nhttps://diegemiao.github.io/news/`);
+        const ts = Date.now().toString(36);
+        await sendText(process.env.FEISHU_CHAT_ID, `📰 ${label}\nhttps://diegemiao.github.io/news/?t=${ts}`);
         console.log('  [飞书] 链接已发送');
       }
     } catch (e) { /* feishu not configured — skip */ }
