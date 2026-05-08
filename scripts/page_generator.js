@@ -22,13 +22,29 @@ function generatePage(articles, dateStr, isMorning = true) {
     articlesHtml += `<section class="category-section" data-cat="${category}">
       <h2 class="section-title">${category}<span class="section-count">${arts.length} 篇</span></h2>`;
 
-    for (const a of arts) {
-      num++;
-      const badge = a.high_discussion
-        ? `<span class="card-badge">热议</span>`
-        : (a.quality_score >= 70 ? `<span class="card-badge score">高质</span>` : '');
+    // Hot search category: compact pill layout
+    if (category === '热搜') {
+      articlesHtml += '<div class="hot-pills">';
+      for (const a of arts) {
+        num++;
+        const plat = a.source_name.replace('热搜', '').replace('热榜', '');
+        articlesHtml += `
+          <a href="${a.url}" target="_blank" rel="noopener" class="hot-pill">
+            <span class="hot-pill-rank">${num}</span>
+            <span class="hot-pill-platform">${plat}</span>
+            <span class="hot-pill-title">${a.title}</span>
+            ${a.summary ? `<span class="hot-pill-heat">${a.summary.replace('热度 ', '')}</span>` : ''}
+          </a>`;
+      }
+      articlesHtml += '</div>';
+    } else {
+      for (const a of arts) {
+        num++;
+        const badge = a.high_discussion
+          ? `<span class="card-badge">精选</span>`
+          : (a.quality_score >= 70 ? `<span class="card-badge score">高质</span>` : '');
 
-      articlesHtml += `
+        articlesHtml += `
         <article class="card" data-cat="${category}">
           <span class="card-num">${num}</span>
           <div class="card-body">
@@ -41,6 +57,7 @@ function generatePage(articles, dateStr, isMorning = true) {
             <p class="card-summary">${a.summary}</p>
           </div>
         </article>`;
+      }
     }
     articlesHtml += '</section>';
   }

@@ -34,33 +34,41 @@ async function main() {
   const { newArticles, updatedSeen } = filterNewArticles(articles, archive, isFirstRun);
   console.log(`  新文章: ${newArticles.length} 篇 (过滤掉 ${articles.length - newArticles.length} 篇重复)`);
 
-  // 4. Recency filter + high-discussion override
-  console.log('[4/6] 时效过滤...');
+  // 4. Recency + quality filter
+  console.log('[4/6] 时效+质量过滤...');
+  const oneDayAgo = new Date(Date.now() - 24 * 3600 * 1000);
   const cutoffTime = new Date(Date.now() - recencyHours * 3600 * 1000);
 
-  // For specific period: morning = since yesterday 18:00, evening = since today 08:00
-  const periodStart = isMorning
-    ? new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1, 18, 0, 0)
-    : new Date(now.getFullYear(), now.getMonth(), now.getDate(), 8, 0, 0);
-  const effectiveCutoff = isFirstRun ? cutoffTime : periodStart;
+  let qualityCount = 0;
+  const displayArticles = articles.filter(a => {
+    // Quality signals: high discussion, high AIHOT quality score, high heat
+    const isHighQuality = (a.comments || 0) >= discussionThreshold
+                       || (a.quality_score || 0) >= 70
+                       || (a.comments || 0) >= 10000; // hot trend items
 
-  const displayArticles = (isFirstRun ? articles : newArticles).filter(a => {
-    // High-discussion articles: always include regardless of time
-    if ((a.comments || 0) >= discussionThreshold) {
-      a.high_discussion = true;
-      return true;
-    }
-    // Regular filter: within time window, or no pubDate (assume recent)
+    a.high_discussion = false;
+
+    // No pubDate — assume recent, include
     if (!a.published) return true;
     const pubDate = new Date(a.published);
-    if (isNaN(pubDate)) return true; // can't parse date, include anyway
-    return pubDate >= effectiveCutoff;
+    if (isNaN(pubDate)) return true;
+
+    // Published within last 24h (today) → always show
+    if (pubDate >= oneDayAgo) return true;
+
+    // Older but high quality → show, within recency window
+    if (isHighQuality && pubDate >= cutoffTime) {
+      a.high_discussion = true;
+      qualityCount++;
+      return true;
+    }
+
+    return false;
   });
 
-  const staleCount = (isFirstRun ? articles : newArticles).length - displayArticles.length;
-  const hotCount = displayArticles.filter(a => a.high_discussion).length;
-  if (hotCount > 0) console.log(`  高讨论文章例外: ${hotCount} 篇`);
-  console.log(`  时效内文章: ${displayArticles.length} 篇 (过滤 ${staleCount} 篇过期)`);
+  const filteredCount = articles.length - displayArticles.length;
+  if (qualityCount > 0) console.log(`  高质量旧文保留: ${qualityCount} 篇`);
+  console.log(`  展示文章: ${displayArticles.length} 篇 (过滤 ${filteredCount} 篇过期/低质)`);
 
   // 5. Generate outputs
   console.log('[5/6] 生成输出...');
@@ -81,7 +89,7 @@ async function main() {
 
   // Summary
   console.log('\n=== 完成 ===');
-  console.log(`  时效内文章: ${displayArticles.length} 篇${hotCount > 0 ? ` (含${hotCount}篇高讨论)` : ''}`);
+  console.log(`  展示文章: ${displayArticles.length} 篇${qualityCount > 0 ? ` (含${qualityCount}篇高质量旧文)` : ''}`);
   console.log(`  网页: docs/index.html`);
   console.log(`  邮件预览: docs/email-preview.html`);
 

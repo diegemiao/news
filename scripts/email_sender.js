@@ -18,9 +18,24 @@ async function sendDigestEmail(articles, dateStr, isMorning = true) {
           ${category}<span style="font-size:12px;font-weight:400;color:#a1a1aa;margin-left:8px;">${arts.length} 篇</span>
         </h2>`;
 
-    for (const a of arts) {
-      num++;
-      contentHtml += `
+    if (category === '热搜') {
+      // Compact inline pill layout for hot search
+      contentHtml += '<div style="line-height:2.2;">';
+      for (const a of arts) {
+        num++;
+        const heat = a.summary ? a.summary.replace('热度 ', '') : '';
+        const plat = a.source_name.replace('热搜', '').replace('热榜', '');
+        contentHtml += `
+          <a href="${a.url}" style="display:inline-block;padding:2px 10px;margin:2px 4px 2px 0;border:1px solid #e4e4e7;border-radius:100px;font-size:12px;color:#18181b;text-decoration:none;background:#fafafa;" target="_blank" rel="noopener">
+            <span style="font-size:10px;font-weight:600;color:#2563eb;margin-right:4px;">${plat}</span>${num}. ${a.title}
+            ${heat ? `<span style="font-size:10px;color:#dc2626;margin-left:4px;">${heat}</span>` : ''}
+          </a>`;
+      }
+      contentHtml += '</div>';
+    } else {
+      for (const a of arts) {
+        num++;
+        contentHtml += `
         <div style="padding:12px 0;border-bottom:1px solid #f4f4f5;">
           <div style="font-size:11px;color:#71717a;margin-bottom:4px;">
             <span style="font-weight:600;color:#2563eb;">${a.source_name}</span>
@@ -32,6 +47,7 @@ async function sendDigestEmail(articles, dateStr, isMorning = true) {
           </h3>
           <p style="font-size:13px;color:#71717a;line-height:1.55;margin:0;">${a.summary}</p>
         </div>`;
+      }
     }
     contentHtml += '</div>';
   }

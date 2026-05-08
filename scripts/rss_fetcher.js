@@ -16,12 +16,13 @@ const parser = new RssParser({
  */
 async function fetchFeed(feedConfig, settings) {
   const { max_articles_per_feed = 8, max_retries = 2 } = settings;
+  const limit = feedConfig.max_items || max_articles_per_feed;
   let lastError = null;
 
   for (let attempt = 0; attempt <= max_retries; attempt++) {
     try {
       const feed = await parser.parseURL(feedConfig.url);
-      const articles = (feed.items || []).slice(0, max_articles_per_feed).map(item => {
+      const articles = (feed.items || []).slice(0, limit).map(item => {
         const rawTitle = item.title || '';
         const snippet = stripHtml(item.contentSnippet || item.content || '');
         return {
@@ -58,16 +59,17 @@ async function fetchFeedApi(feedConfig) {
   });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const data = await res.json();
+  const apiMax = feedConfig.max_items || 20;
 
   // Detect response format
   if (data.data && Array.isArray(data.data)) {
-    // 60s.viki.moe format: {data: [{title, url, 热度, rank}]}
-    return data.data.slice(0, 20).map(item => ({
-      guid: item.url || `hot-${item.title}`,
+    // 60s.viki.moe format: {data: [{title, link, hot_value, 热度, url, rank}]}
+    return data.data.slice(0, apiMax).map(item => ({
+      guid: item.link || item.url || `hot-${item.title}`,
       title: buildTitle(item.title || '', '', ''),
-      url: item.url || '',
-      summary: item.热度 ? `热度 ${formatHeat(item.热度)}` : '',
-      comments: parseInt(item.热度, 10) || 0,
+      url: item.link || item.url || '',
+      summary: (item.hot_value || item.热度) ? `热度 ${formatHeat(item.hot_value || item.热度)}` : '',
+      comments: parseInt(item.hot_value || item.热度, 10) || 0,
       source_name: feedConfig.name,
       source_id: feedConfig.id,
       category: feedConfig.category,
@@ -80,7 +82,7 @@ async function fetchFeedApi(feedConfig) {
 
   // AIHOT format: {items: [{title, url, summaryZh, publishedAt, ...}]}
   const items = data.items || [];
-  return items.slice(0, 20).map(item => {
+  return items.slice(0, apiMax).map(item => {
     const rawTitle = item.titleZh || item.title || '';
     const summary = item.summaryZh || item.summary || '';
     const title = buildTitle(rawTitle, summary, item.source?.name || '');

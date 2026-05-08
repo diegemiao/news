@@ -154,6 +154,57 @@ body {
   overflow: hidden;
 }
 
+/* === Hot Pills (热搜 compact) === */
+.hot-pills {
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+
+.hot-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 4px 10px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 13px; line-height: 1.4;
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.12s, box-shadow 0.12s;
+  white-space: nowrap;
+}
+
+.hot-pill:hover {
+  border-color: var(--accent);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.hot-pill-rank {
+  font-size: 10px; font-weight: 700;
+  color: var(--text-secondary);
+  min-width: 14px; text-align: center;
+}
+
+.hot-pill-platform {
+  font-size: 10px; font-weight: 600;
+  color: var(--accent);
+  background: var(--tag-bg);
+  padding: 1px 5px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.hot-pill-title {
+  max-width: 280px;
+  overflow: hidden; text-overflow: ellipsis;
+}
+
+.hot-pill-heat {
+  font-size: 10px; font-weight: 600;
+  color: var(--badge-text);
+  background: var(--badge-bg);
+  padding: 1px 5px;
+  border-radius: 100px;
+}
+
 /* === Footer === */
 .footer {
   text-align: center; padding: 24px 0;

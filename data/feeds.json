@@ -108,6 +108,7 @@
       "type": "api",
       "category": "热搜",
       "enabled": true,
+      "max_items": 8,
       "note": "微博实时热搜榜TOP50"
     },
     {
@@ -117,6 +118,7 @@
       "type": "api",
       "category": "热搜",
       "enabled": true,
+      "max_items": 8,
       "note": "知乎实时热榜TOP30"
     },
     {
@@ -126,6 +128,7 @@
       "type": "api",
       "category": "热搜",
       "enabled": true,
+      "max_items": 8,
       "note": "百度实时热搜TOP50"
     },
     {
@@ -135,6 +138,7 @@
       "type": "api",
       "category": "热搜",
       "enabled": true,
+      "max_items": 8,
       "note": "抖音实时热榜TOP50"
     },
     {
@@ -144,6 +148,7 @@
       "type": "api",
       "category": "热搜",
       "enabled": true,
+      "max_items": 8,
       "note": "今日头条热榜TOP50"
     },
     {
@@ -153,6 +158,7 @@
       "type": "api",
       "category": "热搜",
       "enabled": true,
+      "max_items": 8,
       "note": "B站实时热榜TOP50"
     },
     {
@@ -169,7 +175,7 @@
       "name": "少数派",
       "url": "https://sspai.com/feed",
       "type": "rss",
-      "category": "数码",
+      "category": "科技",
       "enabled": true,
       "note": "数码生活与效率工具"
     },
@@ -178,7 +184,7 @@
       "name": "36氪",
       "url": "https://36kr.com/feed",
       "type": "rss",
-      "category": "商业",
+      "category": "科技",
       "enabled": true,
       "note": "商业科技与创投"
     },
@@ -210,6 +216,108 @@
       "note": "体育焦点新闻，全天更新"
     },
     {
+      "id": "hupu-bxj",
+      "name": "虎扑步行街",
+      "url": "https://rsshub.rssforever.com/hupu/bxj",
+      "type": "rsshub",
+      "category": "综合",
+      "enabled": true,
+      "note": "虎扑步行街热帖，社区讨论"
+    },
+    {
+      "id": "wallstreetcn",
+      "name": "华尔街见闻",
+      "url": "https://rsshub.rssforever.com/wallstreetcn/news/global",
+      "type": "rsshub",
+      "category": "经济",
+      "enabled": true,
+      "note": "全球财经快讯，实时更新"
+    },
+    {
+      "id": "caixin",
+      "name": "财新网",
+      "url": "https://rsshub.rssforever.com/caixin/latest",
+      "type": "rsshub",
+      "category": "经济",
+      "enabled": true,
+      "note": "深度财经与政经报道"
+    },
+    {
+      "id": "guokr",
+      "name": "果壳科学",
+      "url": "https://rsshub.rssforever.com/guokr/scientific",
+      "type": "rsshub",
+      "category": "科技",
+      "enabled": true,
+      "note": "科普文章与科学新闻"
+    },
+    {
+      "id": "bbc-chinese",
+      "name": "BBC中文",
+      "url": "https://rsshub.rssforever.com/bbc/chinese",
+      "type": "rsshub",
+      "category": "时政",
+      "enabled": true,
+      "note": "BBC中文新闻，国际视角"
+    },
+    {
+      "id": "hupu-nba",
+      "name": "虎扑NBA",
+      "url": "https://rsshub.rssforever.com/hupu/bbs/nba",
+      "type": "rsshub",
+      "category": "体育",
+      "enabled": true,
+      "note": "虎扑NBA讨论区，公共镜像已恢复"
+    },
+    {
+      "id": "zaobao-china",
+      "name": "联合早报中港台",
+      "url": "https://rsshub.rssforever.com/zaobao/realtime/china",
+      "type": "rsshub",
+      "category": "时政",
+      "enabled": true,
+      "note": "新加坡视角的中港台即时新闻"
+    },
+    {
+      "id": "zaobao-intl",
+      "name": "联合早报国际",
+      "url": "https://rsshub.rssforever.com/zaobao/realtime/singapore",
+      "type": "rsshub",
+      "category": "时政",
+      "enabled": true,
+      "note": "新加坡+国际即时新闻"
+    },
+    {
+      "id": "espn",
+      "name": "ESPN综合",
+      "url": "https://www.espn.com/espn/rss/news",
+      "type": "rss",
+      "category": "体育",
+      "enabled": false,
+      "max_items": 8,
+      "note": "ESPN全球体育头条，英文，备用"
+    },
+    {
+      "id": "espn-nba",
+      "name": "ESPN NBA",
+      "url": "https://www.espn.com/espn/rss/nba/news",
+      "type": "rss",
+      "category": "体育",
+      "enabled": false,
+      "max_items": 8,
+      "note": "ESPN NBA专区，英文，备用"
+    },
+    {
+      "id": "sky-sports",
+      "name": "Sky Sports",
+      "url": "https://feeds.skynews.com/feeds/rss/sports.xml",
+      "type": "rss",
+      "category": "体育",
+      "enabled": false,
+      "max_items": 8,
+      "note": "英国天空体育，英文，备用"
+    },
+    {
       "id": "jiqizhixin",
       "name": "机器之心",
       "url": "https://rsshub.rssforever.com/jiqizhixin/home",
@@ -223,7 +331,7 @@
       "name": "虎嗅",
       "url": "https://www.huxiu.com/rss/0.xml",
       "type": "rss",
-      "category": "商业",
+      "category": "科技",
       "enabled": false,
       "note": "商业评论，可能超时待修复"
     },
@@ -239,11 +347,11 @@
     {
       "id": "hupu-soccer",
       "name": "虎扑足球",
-      "url": "https://rsshub.app/hupu/dept/soccer",
+      "url": "https://rsshub.rssforever.com/hupu/dept/soccer",
       "type": "rsshub",
       "category": "体育",
-      "enabled": false,
-      "note": "需自建RSSHub，公开镜像不可用"
+      "enabled": true,
+      "note": "虎扑足球讨论，RSSHub路由已恢复"
     },
     {
       "id": "hupu-nba",
@@ -269,8 +377,8 @@
       "url": "https://rsshub.rssforever.com/thepaper/featured",
       "type": "rsshub",
       "category": "时政",
-      "enabled": false,
-      "note": "澎湃头条(RSSHub)，503待恢复"
+      "enabled": true,
+      "note": "澎湃头条，RSSHub路由已恢复"
     },
     {
       "id": "sina-nba",
