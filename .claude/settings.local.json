@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "Bash(npx skills *)",
+      "Bash(pip install *)",
+      "Bash(python3 -m pip install feedparser Jinja2 python-dotenv -q)",
+      "Bash(cmd.exe *)",
+      "Bash(npm --version)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(node *)",
+      "Bash(explorer.exe \"C:\\\\Users\\\\win11\\\\Desktop\\\\news\\\\docs\\\\index.html\")",
+      "Bash(explorer.exe \"C:\\\\Users\\\\win11\\\\Desktop\\\\news\\\\docs\\\\email-preview.html\")",
+      "WebFetch(domain:aihot.virxact.com)"
+    ]
+  }
+}

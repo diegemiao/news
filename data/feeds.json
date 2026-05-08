@@ -1,0 +1,312 @@
+{
+  "_help": "新闻源配置文件。type支持: rss(标准RSS/Atom) | rsshub(RSSHub路由) | api(JSON API)。enabled: true启用/false暂停。可直接编辑此文件增删源。",
+
+  "feeds": [
+    {
+      "id": "aihot",
+      "name": "AIHOT精选",
+      "url": "https://aihot.virxact.com/api/public/feed",
+      "type": "api",
+      "category": "AI",
+      "enabled": true,
+      "note": "168源AI精选，AI摘要+质量评分，每日更新"
+    },
+    {
+      "id": "huggingface-papers",
+      "name": "HuggingFace论文",
+      "url": "https://rsshub.rssforever.com/huggingface/daily-papers",
+      "type": "rsshub",
+      "category": "AI",
+      "enabled": true,
+      "note": "HuggingFace每日精选论文"
+    },
+    {
+      "id": "huggingface-blog",
+      "name": "HuggingFace博客",
+      "url": "https://rsshub.rssforever.com/huggingface/blog",
+      "type": "rsshub",
+      "category": "AI",
+      "enabled": true,
+      "note": "HuggingFace官方技术博客"
+    },
+    {
+      "id": "ai-news-en",
+      "name": "AI News (EN)",
+      "url": "https://www.artificialintelligence-news.com/feed/",
+      "type": "rss",
+      "category": "AI",
+      "enabled": true,
+      "note": "国际AI新闻，英文"
+    },
+    {
+      "id": "ruanyifeng",
+      "name": "阮一峰",
+      "url": "https://www.ruanyifeng.com/blog/atom.xml",
+      "type": "rss",
+      "category": "科技",
+      "enabled": true,
+      "note": "科技周刊，每周五更新"
+    },
+    {
+      "id": "solidot",
+      "name": "Solidot",
+      "url": "https://www.solidot.org/index.rss",
+      "type": "rss",
+      "category": "科技",
+      "enabled": true,
+      "note": "中文Slashdot，科技快讯"
+    },
+    {
+      "id": "geekpark",
+      "name": "极客公园",
+      "url": "http://www.geekpark.net/rss",
+      "type": "rss",
+      "category": "科技",
+      "enabled": true,
+      "note": "科技前沿与创业"
+    },
+    {
+      "id": "ithome",
+      "name": "IT之家",
+      "url": "https://www.ithome.com/rss/",
+      "type": "rss",
+      "category": "科技",
+      "enabled": true,
+      "note": "IT资讯与数码"
+    },
+    {
+      "id": "v2ex-hot",
+      "name": "V2EX热门",
+      "url": "https://rsshub.rssforever.com/v2ex/tab/hot",
+      "type": "rsshub",
+      "category": "科技",
+      "enabled": true,
+      "note": "技术社区热门讨论"
+    },
+    {
+      "id": "github-trending",
+      "name": "GitHub热门",
+      "url": "https://rsshub.rssforever.com/github/trending/daily/python",
+      "type": "rsshub",
+      "category": "科技",
+      "enabled": true,
+      "note": "GitHub Python每日热门"
+    },
+    {
+      "id": "sspai-matrix",
+      "name": "少数派Matrix",
+      "url": "https://rsshub.rssforever.com/sspai/matrix",
+      "type": "rsshub",
+      "category": "科技",
+      "enabled": true,
+      "note": "少数派作者社区"
+    },
+    {
+      "id": "weibo",
+      "name": "微博热搜",
+      "url": "https://60s.viki.moe/v2/weibo",
+      "type": "api",
+      "category": "热搜",
+      "enabled": true,
+      "note": "微博实时热搜榜TOP50"
+    },
+    {
+      "id": "zhihu-hot",
+      "name": "知乎热榜",
+      "url": "https://60s.viki.moe/v2/zhihu",
+      "type": "api",
+      "category": "热搜",
+      "enabled": true,
+      "note": "知乎实时热榜TOP30"
+    },
+    {
+      "id": "baidu-hot",
+      "name": "百度热搜",
+      "url": "https://60s.viki.moe/v2/baidu/hot",
+      "type": "api",
+      "category": "热搜",
+      "enabled": true,
+      "note": "百度实时热搜TOP50"
+    },
+    {
+      "id": "douyin-hot",
+      "name": "抖音热榜",
+      "url": "https://60s.viki.moe/v2/douyin",
+      "type": "api",
+      "category": "热搜",
+      "enabled": true,
+      "note": "抖音实时热榜TOP50"
+    },
+    {
+      "id": "toutiao",
+      "name": "今日头条",
+      "url": "https://60s.viki.moe/v2/toutiao",
+      "type": "api",
+      "category": "热搜",
+      "enabled": true,
+      "note": "今日头条热榜TOP50"
+    },
+    {
+      "id": "bilibili-hot",
+      "name": "B站热榜",
+      "url": "https://60s.viki.moe/v2/bili",
+      "type": "api",
+      "category": "热搜",
+      "enabled": true,
+      "note": "B站实时热榜TOP50"
+    },
+    {
+      "id": "zhihu-daily",
+      "name": "知乎日报",
+      "url": "https://rsshub.rssforever.com/zhihu/daily",
+      "type": "rsshub",
+      "category": "综合",
+      "enabled": true,
+      "note": "知乎每日精选内容"
+    },
+    {
+      "id": "sspai",
+      "name": "少数派",
+      "url": "https://sspai.com/feed",
+      "type": "rss",
+      "category": "数码",
+      "enabled": true,
+      "note": "数码生活与效率工具"
+    },
+    {
+      "id": "36kr",
+      "name": "36氪",
+      "url": "https://36kr.com/feed",
+      "type": "rss",
+      "category": "商业",
+      "enabled": true,
+      "note": "商业科技与创投"
+    },
+    {
+      "id": "people-politics",
+      "name": "人民网时政",
+      "url": "http://www.people.com.cn/rss/politics.xml",
+      "type": "rss",
+      "category": "时政",
+      "enabled": true,
+      "note": "人民网时政新闻"
+    },
+    {
+      "id": "chinanews",
+      "name": "中新网",
+      "url": "http://www.chinanews.com/rss/scroll-news.xml",
+      "type": "rss",
+      "category": "时政",
+      "enabled": true,
+      "note": "中国新闻网即时新闻"
+    },
+    {
+      "id": "sina-sports",
+      "name": "新浪体育",
+      "url": "http://rss.sina.com.cn/news/allnews/sports.xml",
+      "type": "rss",
+      "category": "体育",
+      "enabled": true,
+      "note": "体育焦点新闻，全天更新"
+    },
+    {
+      "id": "jiqizhixin",
+      "name": "机器之心",
+      "url": "https://rsshub.rssforever.com/jiqizhixin/home",
+      "type": "rsshub",
+      "category": "AI",
+      "enabled": false,
+      "note": "AI专业媒体，需自建RSSHub"
+    },
+    {
+      "id": "huxiu",
+      "name": "虎嗅",
+      "url": "https://www.huxiu.com/rss/0.xml",
+      "type": "rss",
+      "category": "商业",
+      "enabled": false,
+      "note": "商业评论，可能超时待修复"
+    },
+    {
+      "id": "xueqiu",
+      "name": "雪球",
+      "url": "https://xueqiu.com/hots/topic/rss",
+      "type": "rss",
+      "category": "经济",
+      "enabled": false,
+      "note": "投资者社区，待验证"
+    },
+    {
+      "id": "hupu-soccer",
+      "name": "虎扑足球",
+      "url": "https://rsshub.app/hupu/dept/soccer",
+      "type": "rsshub",
+      "category": "体育",
+      "enabled": false,
+      "note": "需自建RSSHub，公开镜像不可用"
+    },
+    {
+      "id": "hupu-nba",
+      "name": "虎扑NBA",
+      "url": "https://rsshub.app/hupu/bbs/nba",
+      "type": "rsshub",
+      "category": "体育",
+      "enabled": false,
+      "note": "需自建RSSHub，公开镜像不可用"
+    },
+    {
+      "id": "dongqiudi",
+      "name": "懂球帝",
+      "url": "https://rsshub.app/dongqiudi/special/48",
+      "type": "rsshub",
+      "category": "体育",
+      "enabled": false,
+      "note": "需自建RSSHub，公开镜像不可用"
+    },
+    {
+      "id": "thepaper",
+      "name": "澎湃新闻",
+      "url": "https://rsshub.rssforever.com/thepaper/featured",
+      "type": "rsshub",
+      "category": "时政",
+      "enabled": false,
+      "note": "澎湃头条(RSSHub)，503待恢复"
+    },
+    {
+      "id": "sina-nba",
+      "name": "新浪NBA",
+      "url": "http://rss.sina.com.cn/sports/basketball/nba.xml",
+      "type": "rss",
+      "category": "体育",
+      "enabled": false,
+      "note": "NBA新闻，赛季中激活"
+    },
+    {
+      "id": "hellogithub",
+      "name": "HelloGitHub",
+      "url": "https://hellogithub.com/rss",
+      "type": "rss",
+      "category": "科技",
+      "enabled": false,
+      "note": "开源月刊，待验证"
+    },
+    {
+      "id": "cnbeta",
+      "name": "cnBeta",
+      "url": "https://www.cnbeta.com/backend.php",
+      "type": "rss",
+      "category": "科技",
+      "enabled": false,
+      "note": "科技资讯，待验证"
+    }
+  ],
+  "settings": {
+    "max_articles_per_feed": 5,
+    "max_total_articles": 120,
+    "fetch_timeout_ms": 30000,
+    "max_retries": 2,
+    "archive_retention_days": 30,
+    "recency_hours": 72,
+    "high_discussion_threshold": 50
+  }
+}

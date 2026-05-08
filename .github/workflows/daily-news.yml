@@ -1,0 +1,55 @@
+name: Daily News Digest
+
+on:
+  schedule:
+    - cron: '0 9,18 * * *'
+      timezone: 'Asia/Shanghai'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'templates/**'
+      - 'data/feeds.json'
+      - '.github/workflows/daily-news.yml'
+
+concurrency:
+  group: news-digest
+  cancel-in-progress: false
+
+jobs:
+  fetch-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - run: npm ci
+
+      - name: Fetch news and generate
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          GITHUB_PAGES_URL: ${{ vars.GITHUB_PAGES_URL || 'https://<user>.github.io/news/' }}
+          GITEE_PAGES_URL: ${{ vars.GITEE_PAGES_URL || 'https://<user>.gitee.io/news/' }}
+        run: node scripts/main.js
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/archive.json docs/index.html
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "$(date +%Y-%m-%d) 新闻速递自动更新"
+            git push origin main
+          fi

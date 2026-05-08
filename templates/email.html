@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{SUBJECT}}</title>
+</head>
+<body style="margin:0;padding:0;background:#f4f4f5;font-family:'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif;">
+<table width="100%" cellpadding="0" cellspacing="0" style="background:#f4f4f5;padding:20px 0;">
+<tr><td align="center">
+<table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff;border-radius:10px;overflow:hidden;">
+
+  <tr>
+    <td style="background:#18181b;padding:26px 30px;text-align:center;">
+      <div style="font-size:20px;font-weight:700;color:#f4f4f5;letter-spacing:0.02em;">{{PERIOD}}新闻速递</div>
+      <div style="font-size:12px;color:#a1a1aa;margin-top:4px;">{{DATE}} &middot; 共 {{COUNT}} 篇</div>
+    </td>
+  </tr>
+
+  <tr>
+    <td style="padding:20px 26px;">
+      {{CONTENT}}
+    </td>
+  </tr>
+
+  <tr>
+    <td style="background:#fafafa;padding:16px 26px;text-align:center;border-top:1px solid #e4e4e7;">
+      <div style="font-size:12px;color:#a1a1aa;line-height:1.8;">
+        <div><a href="{{GITEE_URL}}" style="color:#2563eb;">Gitee Pages</a>（国内访问）&middot; <a href="{{GITHUB_URL}}" style="color:#2563eb;">GitHub Pages</a></div>
+        <div>每日 9:00 / 18:00 &middot; 由 GitHub Actions 自动发送</div>
+      </div>
+    </td>
+  </tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

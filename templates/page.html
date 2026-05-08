@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{PERIOD}}新闻速递 &middot; {{DATE}}</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1a1a2e">
+</head>
+<body>
+
+<div class="container">
+  <header class="header">
+    <h1 class="header-title">{{PERIOD}}新闻速递</h1>
+    <p class="header-meta">{{DATE}} &middot; {{COUNT}} 篇 &middot; {{GENERATED_TIME}} 更新</p>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button class="tab active" data-cat="全部">全部</button>
+    {{TABS}}
+  </nav>
+
+  <main class="main">
+    {{ARTICLES}}
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-links">
+      <a href="https://github.com" rel="noopener">GitHub</a>
+      <span>&middot;</span>
+      <a href="https://gitee.com" rel="noopener">Gitee</a>
+    </nav>
+    <p class="footer-note">由 GitHub Actions 自动生成 &middot; 每日 9:00 / 18:00 更新 &middot; 仅推送时效内新闻</p>
+  </footer>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
