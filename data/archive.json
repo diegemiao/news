@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-05-08T16:52:04.604Z",
+  "last_pruned": "2026-05-08T17:02:09.114Z",
   "seen": {
     "aihot": {
       "guid:cmownduwl00kdslkuwxyxo7l7": 1778230993.092,
@@ -537,7 +537,10 @@
       "hash:f9ce6eb8": 1778256080.3,
       "guid:https://s.weibo.com/weibo?q=%E6%B5%AA%E5%A7%90%E8%BE%9F%E8%B0%A3%E4%B8%89%E5%85%AC%E5%BD%95%E6%92%AD": 1778259122.383,
       "url:https://s.weibo.com/weibo?q=%E6%B5%AA%E5%A7%90%E8%BE%9F%E8%B0%A3%E4%B8%89%E5%85%AC%E5%BD%95%E6%92%AD": 1778259122.383,
-      "hash:314d5536": 1778259122.383
+      "hash:314d5536": 1778259122.383,
+      "guid:https://s.weibo.com/weibo?q=%E5%90%8C%E4%BB%B7%E4%B9%B0%E5%A5%A5%E8%BF%AA%E8%BF%98%E6%98%AF%E4%B9%B0%E5%B0%8F%E7%B1%B3": 1778259727.198,
+      "url:https://s.weibo.com/weibo?q=%E5%90%8C%E4%BB%B7%E4%B9%B0%E5%A5%A5%E8%BF%AA%E8%BF%98%E6%98%AF%E4%B9%B0%E5%B0%8F%E7%B1%B3": 1778259727.198,
+      "hash:6f798e54": 1778259727.198
     },
     "zhihu-hot": {
       "guid:hot-宇树机器人以佛弟子身份在韩国寺庙受戒，「五戒」要求「不过度充电、不顶撞人类」等，如何看待机器人皈依？": 1778230993.108,
@@ -616,7 +619,10 @@
       "hash:109eef32": 1778259122.383,
       "guid:https://www.zhihu.com/question/2036190367217705690": 1778259122.383,
       "url:https://www.zhihu.com/question/2036190367217705690": 1778259122.383,
-      "hash:903f96b0": 1778259122.383
+      "hash:903f96b0": 1778259122.383,
+      "guid:https://www.zhihu.com/question/2036025399935775604": 1778259727.198,
+      "url:https://www.zhihu.com/question/2036025399935775604": 1778259727.198,
+      "hash:9f1ee7b0": 1778259727.198
     },
     "baidu-hot": {
       "guid:https://www.baidu.com/s?wd=%E9%A6%99%E6%B8%AF1.7%E4%BA%BF%E6%8B%BF%E4%B8%8B%E4%B8%96%E7%95%8C%E6%9D%AF%E8%BD%AC%E6%92%AD%E6%9D%83&sa=fyb_news&rsv_dl=fyb_news": 1778230993.108,
@@ -987,7 +993,10 @@
       "hash:992ccfc8": 1778256080.301,
       "guid:https://www.toutiao.com/trending/7637519731813158410": 1778256080.301,
       "url:https://www.toutiao.com/trending/7637519731813158410": 1778256080.301,
-      "hash:045d0a50": 1778256080.301
+      "hash:045d0a50": 1778256080.301,
+      "guid:https://www.toutiao.com/trending/7637487465263382570": 1778259727.198,
+      "url:https://www.toutiao.com/trending/7637487465263382570": 1778259727.198,
+      "hash:51f1fbe1": 1778259727.198
     },
     "bilibili-hot": {
       "guid:hot-北京JDG 佛山DRG": 1778230993.113,
@@ -1798,7 +1807,16 @@
       "hash:48f58a6d": 1778259122.385,
       "guid:639131930": 1778259122.385,
       "url:https://m.hupu.com/bbs/639131930": 1778259122.385,
-      "hash:fe86d6fb": 1778259122.385
+      "hash:fe86d6fb": 1778259122.385,
+      "guid:639132094": 1778259727.199,
+      "url:https://m.hupu.com/bbs/639132094": 1778259727.199,
+      "hash:3b1b4ae3": 1778259727.199,
+      "guid:639132046": 1778259727.199,
+      "url:https://m.hupu.com/bbs/639132046": 1778259727.199,
+      "hash:58c0f03d": 1778259727.199,
+      "guid:639132043": 1778259727.199,
+      "url:https://m.hupu.com/bbs/639132043": 1778259727.199,
+      "hash:fea1e7cb": 1778259727.199
     },
     "thepaper": {
       "guid:https://m.thepaper.cn/detail/33122989": 1778235316.532,
