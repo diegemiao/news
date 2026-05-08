@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-05-08T16:05:47.982Z",
+  "last_pruned": "2026-05-08T16:17:45.910Z",
   "seen": {
     "aihot": {
       "guid:cmownduwl00kdslkuwxyxo7l7": 1778230993.092,
@@ -68,7 +68,10 @@
       "hash:0d1d323c": 1778235316.526,
       "guid:cmowwbpqm01e1sl90f3oumz48": 1778247140.319,
       "url:https://x.com/berryxia/status/2052719498021773349": 1778247140.319,
-      "hash:8c4c137e": 1778247140.319
+      "hash:8c4c137e": 1778247140.319,
+      "guid:cmox17w0i006zsl8vaax2o24p": 1778257063.602,
+      "url:https://x.com/DrJimFan/status/2052758642781487237": 1778257063.602,
+      "hash:20e5c569": 1778257063.602
     },
     "huggingface-papers": {
       "guid:https://arxiv.org/abs/2605.06416": 1778230993.105,
@@ -105,7 +108,10 @@
       "hash:6c77e11c": 1778230993.106,
       "guid:https://huggingface.co/blog/inference-providers-deepinfra": 1778230993.106,
       "url:https://huggingface.co/blog/inference-providers-deepinfra": 1778230993.106,
-      "hash:6825a91a": 1778230993.106
+      "hash:6825a91a": 1778230993.106,
+      "guid:https://huggingface.co/blog/allenai/emo": 1778257063.603,
+      "url:https://huggingface.co/blog/allenai/emo": 1778257063.603,
+      "hash:5b5d45fd": 1778257063.603
     },
     "ai-news-en": {
       "guid:https://www.artificialintelligence-news.com/?p=113327": 1778230993.106,
@@ -1360,7 +1366,10 @@
       "hash:4e56f621": 1778255361.353,
       "guid:https://www.chinanews.com.cn/gj/2026/05-08/10617828.shtml": 1778255361.354,
       "url:https://www.chinanews.com.cn/gj/2026/05-08/10617828.shtml": 1778255361.354,
-      "hash:3bb43ee7": 1778255361.354
+      "hash:3bb43ee7": 1778255361.354,
+      "guid:https://www.chinanews.com.cn/gj/2026/05-08/10617832.shtml": 1778257063.605,
+      "url:https://www.chinanews.com.cn/gj/2026/05-08/10617832.shtml": 1778257063.605,
+      "hash:6b664794": 1778257063.605
     },
     "sina-sports": {
       "guid:http://go.rss.sina.com.cn/redirect.php?url=/china/j/2018-09-23/doc-ihkmwytn7241824.shtml": 1778230993.116,
@@ -1492,7 +1501,13 @@
       "hash:cbba4f0f": 1778256346.464,
       "guid:3771867": 1778256346.464,
       "url:https://wallstreetcn.com/articles/3771867": 1778256346.464,
-      "hash:1a4a55e8": 1778256346.464
+      "hash:1a4a55e8": 1778256346.464,
+      "guid:3771869": 1778257063.605,
+      "url:https://wallstreetcn.com/articles/3771869": 1778257063.605,
+      "hash:3eb2b895": 1778257063.605,
+      "guid:3771868": 1778257063.605,
+      "url:https://wallstreetcn.com/articles/3771868": 1778257063.605,
+      "hash:7f9f3323": 1778257063.605
     },
     "caixin": {
       "guid:caixin:latest:https://www.caixin.com/2026-05-08/102442045.html": 1778235316.531,
@@ -1726,7 +1741,16 @@
       "hash:fa24de54": 1778256346.465,
       "guid:639131503": 1778256346.465,
       "url:https://m.hupu.com/bbs/639131503": 1778256346.465,
-      "hash:02fbb24e": 1778256346.465
+      "hash:02fbb24e": 1778256346.465,
+      "guid:639131729": 1778257063.605,
+      "url:https://m.hupu.com/bbs/639131729": 1778257063.605,
+      "hash:24e31744": 1778257063.605,
+      "guid:639131695": 1778257063.605,
+      "url:https://m.hupu.com/bbs/639131695": 1778257063.605,
+      "hash:fa9ae5a4": 1778257063.605,
+      "guid:639131656": 1778257063.605,
+      "url:https://m.hupu.com/bbs/639131656": 1778257063.605,
+      "hash:23164220": 1778257063.605
     },
     "thepaper": {
       "guid:https://m.thepaper.cn/detail/33122989": 1778235316.532,
@@ -1851,7 +1875,10 @@
       "hash:41727565": 1778256346.465,
       "guid:https://m.thepaper.cn/detail/33128783": 1778256346.465,
       "url:https://m.thepaper.cn/detail/33128783": 1778256346.465,
-      "hash:f4dc622c": 1778256346.465
+      "hash:f4dc622c": 1778256346.465,
+      "guid:https://m.thepaper.cn/detail/33129372": 1778257063.605,
+      "url:https://m.thepaper.cn/detail/33129372": 1778257063.605,
+      "hash:7b3073d8": 1778257063.605
     },
     "guokr": {
       "guid:https://www.guokr.com/article/469110/": 1778235934.81,
@@ -1977,7 +2004,13 @@
       "hash:b31c2b21": 1778255361.354,
       "guid:https://www.zaobao.com/news/singapore/story20260508-9019278": 1778255361.354,
       "url:https://www.zaobao.com/news/singapore/story20260508-9019278": 1778255361.354,
-      "hash:7d6f433f": 1778255361.354
+      "hash:7d6f433f": 1778255361.354,
+      "guid:https://www.zaobao.com/news/singapore/story20260509-9020230": 1778257063.605,
+      "url:https://www.zaobao.com/news/singapore/story20260509-9020230": 1778257063.605,
+      "hash:9c7e4a26": 1778257063.605,
+      "guid:https://www.zaobao.com/news/singapore/story20260509-9019999": 1778257063.605,
+      "url:https://www.zaobao.com/news/singapore/story20260509-9019999": 1778257063.605,
+      "hash:795f4f90": 1778257063.605
     },
     "espn": {
       "guid:US-EN-48676289": 1778238722.291,
