@@ -87,7 +87,7 @@ async function sendCard(chatId, header, elements) {
 
 async function pollMessages(chatId) {
   const token = await getToken();
-  const url = `https://open.feishu.cn/open-apis/im/v1/messages?receive_id_type=chat_id&receive_id=${chatId}&page_size=20&sort_type=ByCreateTimeDesc`;
+  const url = `https://open.feishu.cn/open-apis/im/v1/messages?container_id_type=chat&container_id=${chatId}&page_size=20&sort_type=ByCreateTimeDesc`;
   const res = await fetch(url, {
     headers: { 'Authorization': `Bearer ${token}` }
   });
