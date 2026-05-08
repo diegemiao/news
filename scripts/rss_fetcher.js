@@ -1,4 +1,5 @@
 const RssParser = require('rss-parser');
+const { truncate, stripHtml, sleep } = require('./utils');
 
 const parser = new RssParser({
   timeout: 30000,
@@ -157,22 +158,7 @@ async function fetchAllFeeds(feeds, settings) {
   return articles;
 }
 
-function truncate(text, maxLen) {
-  if (!text || text.length <= maxLen) return text || '';
-  return text.substring(0, maxLen).replace(/\s+\S*$/, '') + '…';
-}
-
-function stripHtml(str) {
-  return str.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'")
-    .replace(/\s+/g, ' ').trim();
-}
-
-/**
- * Try to extract comment/reply count from RSS item for high-discussion detection
- */
 function parseCommentCount(item) {
-  // Some RSS feeds include slash:comments or similar extensions
   const comments = item.comments || item['slash:comments'] || 0;
   if (typeof comments === 'string') return parseInt(comments, 10) || 0;
   return typeof comments === 'number' ? comments : 0;
@@ -183,10 +169,6 @@ function formatHeat(val) {
   if (isNaN(n)) return '';
   if (n >= 10000) return (n / 10000).toFixed(0) + '万';
   return n.toLocaleString();
-}
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 module.exports = { fetchAllFeeds };

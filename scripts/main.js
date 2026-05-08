@@ -36,7 +36,7 @@ async function main() {
 
   // 4. Recency + quality filter
   console.log('[4/6] 时效+质量过滤...');
-  const oneDayAgo = new Date(Date.now() - 24 * 3600 * 1000);
+  const todayCutoff = new Date(Date.now() - 24 * 3600 * 1000);
   const cutoffTime = new Date(Date.now() - recencyHours * 3600 * 1000);
 
   let qualityCount = 0;
@@ -54,7 +54,7 @@ async function main() {
     if (isNaN(pubDate)) return true;
 
     // Published within last 24h (today) → always show
-    if (pubDate >= oneDayAgo) return true;
+    if (pubDate >= todayCutoff) return true;
 
     // Older but high quality → show, within recency window
     if (isHighQuality && pubDate >= cutoffTime) {

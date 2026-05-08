@@ -100,8 +100,8 @@ async function pollMessages(chatId) {
   const items = data.data?.items || [];
   const commands = [];
   for (const item of items) {
-    const body = JSON.parse(item.body?.content || '{}');
-    const text = body.text || '';
+    let text = '';
+    try { text = JSON.parse(item.body?.content || '{}').text || ''; } catch {}
     // Match commands "123" / "1234"
     if ((text.trim() === '123' || text.trim() === '1234') && item.msg_type === 'text') {
       commands.push({ msgId: item.message_id, text: text.trim() });

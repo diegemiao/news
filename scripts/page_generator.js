@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { groupByCategory, formatTime } = require('./utils');
 
 const TEMPLATE_DIR = path.join(__dirname, '..', 'templates');
 const DOCS_DIR = path.join(__dirname, '..', 'docs');
@@ -80,36 +81,6 @@ function generatePage(articles, dateStr, isMorning = true) {
 
   fs.writeFileSync(path.join(DOCS_DIR, 'index.html'), html, 'utf-8');
   return html;
-}
-
-function groupByCategory(articles) {
-  const groups = {};
-  for (const a of articles) {
-    const cat = a.category || '综合';
-    if (!groups[cat]) groups[cat] = [];
-    groups[cat].push(a);
-  }
-  return groups;
-}
-
-function formatTime(dateStr) {
-  if (!dateStr) return '';
-  try {
-    const d = new Date(dateStr);
-    const now = new Date();
-    const diffMs = now - d;
-    const diffH = Math.floor(diffMs / 3600000);
-    const diffD = Math.floor(diffMs / 86400000);
-
-    if (diffH < 1) return '刚刚';
-    if (diffH < 24) return `${diffH}小时前`;
-    if (diffD < 2) return '昨天';
-    if (diffD < 7) return `${diffD}天前`;
-
-    return d.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai', month: 'short', day: 'numeric' });
-  } catch {
-    return dateStr;
-  }
 }
 
 module.exports = { generatePage };
