@@ -102,8 +102,8 @@ async function pollMessages(chatId) {
   for (const item of items) {
     const body = JSON.parse(item.body?.content || '{}');
     const text = body.text || '';
-    // Match command "123"
-    if (text.trim() === '123' && item.msg_type === 'text') {
+    // Match commands "123" / "1234"
+    if ((text.trim() === '123' || text.trim() === '1234') && item.msg_type === 'text') {
       commands.push({ msgId: item.message_id, text: text.trim() });
     }
   }
@@ -114,11 +114,14 @@ function isConfigured() {
   return !!(process.env.FEISHU_APP_ID && process.env.FEISHU_APP_SECRET && process.env.FEISHU_CHAT_ID);
 }
 
-async function triggerPipeline() {
+async function triggerPipeline(sendEmail) {
   // Use gh CLI with Actions GITHUB_TOKEN (requires actions:write permission in workflow)
   const { execSync } = require('child_process');
   try {
-    execSync('gh workflow run daily-news.yml --repo diegemiao/news', { stdio: 'pipe' });
+    const args = sendEmail
+      ? 'gh workflow run daily-news.yml --repo diegemiao/news -f send_email=true'
+      : 'gh workflow run daily-news.yml --repo diegemiao/news';
+    execSync(args, { stdio: 'pipe' });
     return true;
   } catch (e) {
     console.error(`[飞书] 触发 pipeline 失败: ${e.message}`);
@@ -150,9 +153,11 @@ async function main() {
     console.log('[飞书] 检查消息...');
     const commands = await pollMessages(chatId);
     if (commands.length > 0) {
+      const hasEmail = commands.some(c => c.text === '1234');
+      const label = hasEmail ? '收到，推送+邮件…' : '收到，推送中…';
       console.log(`[飞书] 发现 ${commands.length} 条推送指令`);
-      await sendText(chatId, '收到，推送中…');
-      const ok = await triggerPipeline();
+      await sendText(chatId, label);
+      const ok = await triggerPipeline(hasEmail);
       if (ok) {
         console.log('[飞书] Pipeline 已触发');
       } else {

@@ -75,7 +75,17 @@ async function main() {
   if (displayArticles.length > 0 || isFirstRun) {
     generatePage(displayArticles, dateStr, isMorning);
     console.log('  网页 → docs/index.html');
-    await sendDigestEmail(displayArticles, dateStr, isMorning);
+
+    // Email: only when explicitly requested (SEND_EMAIL=true or locally without feishu)
+    const shouldEmail = process.env.SEND_EMAIL === 'true' || (!process.env.FEISHU_APP_ID && process.env.SMTP_HOST);
+    if (shouldEmail) {
+      await sendDigestEmail(displayArticles, dateStr, isMorning);
+    } else {
+      console.log('  [跳过邮件] 仅飞书推送');
+      const fs = require('fs');
+      const path = require('path');
+      fs.writeFileSync(path.join(__dirname, '..', 'docs', 'email-preview.html'), '', 'utf-8');
+    }
     // Feishu notification
     try {
       const { sendText, isConfigured } = require('./feishu');

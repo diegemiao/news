@@ -5,6 +5,11 @@ on:
     - cron: '0 9,18 * * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:
+    inputs:
+      send_email:
+        description: 'Send email notification'
+        type: boolean
+        default: false
   push:
     branches: [master]
     paths:
@@ -46,6 +51,7 @@ jobs:
           FEISHU_APP_ID: ${{ secrets.FEISHU_APP_ID }}
           FEISHU_APP_SECRET: ${{ secrets.FEISHU_APP_SECRET }}
           FEISHU_CHAT_ID: ${{ secrets.FEISHU_CHAT_ID }}
+          SEND_EMAIL: ${{ inputs.send_email || false }}
           GITHUB_PAGES_URL: ${{ vars.GITHUB_PAGES_URL || 'https://<user>.github.io/news/' }}
           GITEE_PAGES_URL: ${{ vars.GITEE_PAGES_URL || 'https://<user>.gitee.io/news/' }}
         run: node scripts/main.js
