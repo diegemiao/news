@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-05-08T17:02:09.114Z",
+  "last_pruned": "2026-05-08T18:59:49.084Z",
   "seen": {
     "aihot": {
       "guid:cmownduwl00kdslkuwxyxo7l7": 1778230993.092,
@@ -77,7 +77,31 @@
       "hash:db6935ee": 1778259122.382,
       "guid:cmox2re2700flsluh8ky43hxg": 1778259122.382,
       "url:https://x.com/op7418/status/2052764933696475279": 1778259122.382,
-      "hash:bb623ca3": 1778259122.382
+      "hash:bb623ca3": 1778259122.382,
+      "guid:cmox97veb00e1slxip8otxs76": 1778266786.738,
+      "url:https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b": 1778266786.738,
+      "hash:b51b1edc": 1778266786.738,
+      "guid:cmox7tika00dislfonur1c7h6": 1778266786.738,
+      "url:https://x.com/GeminiApp/status/2052805372050604187": 1778266786.738,
+      "hash:ad3bab41": 1778266786.738,
+      "guid:cmox7snrc00cdslfoxg99o3kc": 1778266786.738,
+      "url:https://x.com/AntLingAGI/status/2052808934390661134": 1778266786.738,
+      "hash:33edfc4d": 1778266786.738,
+      "guid:cmox7lapf008rslfogqparmdt": 1778266786.738,
+      "url:https://www.anthropic.com/research/teaching-claude-why": 1778266786.738,
+      "hash:680e8ca3": 1778266786.738,
+      "guid:cmox787mj007fslfoi53rqpks": 1778266786.738,
+      "url:https://machinelearning.apple.com/research/rvpo-risk-sensitive-alignment": 1778266786.738,
+      "hash:21de703c": 1778266786.738,
+      "guid:cmox6tr7800n4sl5s4be6xjek": 1778266786.738,
+      "url:http://bair.berkeley.edu/blog/2026/05/08/adaptive-parallel-reasoning": 1778266786.738,
+      "hash:bbf26a63": 1778266786.738,
+      "guid:cmox6qtbl00jtsl5skwv8vazf": 1778266786.738,
+      "url:https://x.com/OpenAI/status/2052800507727781979": 1778266786.738,
+      "hash:57c4279a": 1778266786.738,
+      "guid:cmox5o2ra00cxsl5shmovcf65": 1778266786.738,
+      "url:https://x.com/perplexity_ai/status/2052786858774630665": 1778266786.738,
+      "hash:290fb15c": 1778266786.738
     },
     "huggingface-papers": {
       "guid:https://arxiv.org/abs/2605.06416": 1778230993.105,
@@ -117,7 +141,10 @@
       "hash:6825a91a": 1778230993.106,
       "guid:https://huggingface.co/blog/allenai/emo": 1778257122.879,
       "url:https://huggingface.co/blog/allenai/emo": 1778257122.879,
-      "hash:5b5d45fd": 1778257122.879
+      "hash:5b5d45fd": 1778257122.879,
+      "guid:https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b": 1778266786.738,
+      "url:https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b": 1778266786.738,
+      "hash:2961386a": 1778266786.738
     },
     "ai-news-en": {
       "guid:https://www.artificialintelligence-news.com/?p=113327": 1778230993.106,
@@ -319,7 +346,13 @@
       "hash:a4710445": 1778256346.462,
       "guid:https://www.ithome.com/0/947/987.htm": 1778256346.462,
       "url:https://www.ithome.com/0/947/987.htm": 1778256346.462,
-      "hash:3941661b": 1778256346.462
+      "hash:3941661b": 1778256346.462,
+      "guid:https://www.ithome.com/0/947/990.htm": 1778266786.739,
+      "url:https://www.ithome.com/0/947/990.htm": 1778266786.739,
+      "hash:df18a233": 1778266786.739,
+      "guid:https://www.ithome.com/0/947/989.htm": 1778266786.739,
+      "url:https://www.ithome.com/0/947/989.htm": 1778266786.739,
+      "hash:d00cec9a": 1778266786.739
     },
     "v2ex-hot": {
       "guid:https://v2ex.com/t/1211033": 1778230993.107,
@@ -540,7 +573,16 @@
       "hash:314d5536": 1778259122.383,
       "guid:https://s.weibo.com/weibo?q=%E5%90%8C%E4%BB%B7%E4%B9%B0%E5%A5%A5%E8%BF%AA%E8%BF%98%E6%98%AF%E4%B9%B0%E5%B0%8F%E7%B1%B3": 1778259727.198,
       "url:https://s.weibo.com/weibo?q=%E5%90%8C%E4%BB%B7%E4%B9%B0%E5%A5%A5%E8%BF%AA%E8%BF%98%E6%98%AF%E4%B9%B0%E5%B0%8F%E7%B1%B3": 1778259727.198,
-      "hash:6f798e54": 1778259727.198
+      "hash:6f798e54": 1778259727.198,
+      "guid:https://s.weibo.com/weibo?q=%E7%8E%8B%E6%A5%9A%E9%92%A67%E6%AF%9411%E5%90%B4%E6%99%99%E8%AF%9A": 1778266786.739,
+      "url:https://s.weibo.com/weibo?q=%E7%8E%8B%E6%A5%9A%E9%92%A67%E6%AF%9411%E5%90%B4%E6%99%99%E8%AF%9A": 1778266786.739,
+      "hash:15cae8fc": 1778266786.739,
+      "guid:https://s.weibo.com/weibo?q=%E9%87%91%E9%AB%98%E9%93%B6%E5%A5%BD%E5%8F%AF%E6%83%9C": 1778266786.739,
+      "url:https://s.weibo.com/weibo?q=%E9%87%91%E9%AB%98%E9%93%B6%E5%A5%BD%E5%8F%AF%E6%83%9C": 1778266786.739,
+      "hash:c2a3d4ab": 1778266786.739,
+      "guid:https://s.weibo.com/weibo?q=%E7%B2%BE%E7%A5%9E%E7%97%85%E9%99%A2%E7%82%92%E8%82%A1%E7%82%92%E6%88%90%E5%85%AC%E5%8F%B8%E5%89%8D%E5%8D%81%E5%A4%A7%E8%82%A1%E4%B8%9C": 1778266786.739,
+      "url:https://s.weibo.com/weibo?q=%E7%B2%BE%E7%A5%9E%E7%97%85%E9%99%A2%E7%82%92%E8%82%A1%E7%82%92%E6%88%90%E5%85%AC%E5%8F%B8%E5%89%8D%E5%8D%81%E5%A4%A7%E8%82%A1%E4%B8%9C": 1778266786.739,
+      "hash:e0c00f3a": 1778266786.739
     },
     "zhihu-hot": {
       "guid:hot-宇树机器人以佛弟子身份在韩国寺庙受戒，「五戒」要求「不过度充电、不顶撞人类」等，如何看待机器人皈依？": 1778230993.108,
@@ -622,7 +664,10 @@
       "hash:903f96b0": 1778259122.383,
       "guid:https://www.zhihu.com/question/2036025399935775604": 1778259727.198,
       "url:https://www.zhihu.com/question/2036025399935775604": 1778259727.198,
-      "hash:9f1ee7b0": 1778259727.198
+      "hash:9f1ee7b0": 1778259727.198,
+      "guid:https://www.zhihu.com/question/2036136694735443067": 1778266786.739,
+      "url:https://www.zhihu.com/question/2036136694735443067": 1778266786.739,
+      "hash:349b8ff1": 1778266786.739
     },
     "baidu-hot": {
       "guid:https://www.baidu.com/s?wd=%E9%A6%99%E6%B8%AF1.7%E4%BA%BF%E6%8B%BF%E4%B8%8B%E4%B8%96%E7%95%8C%E6%9D%AF%E8%BD%AC%E6%92%AD%E6%9D%83&sa=fyb_news&rsv_dl=fyb_news": 1778230993.108,
@@ -844,7 +889,10 @@
       "hash:94a41c85": 1778256080.3,
       "guid:https://www.douyin.com/search/%E4%BB%80%E4%B9%88%E6%98%AF%E9%94%81%E7%94%B5": 1778256346.463,
       "url:https://www.douyin.com/search/%E4%BB%80%E4%B9%88%E6%98%AF%E9%94%81%E7%94%B5": 1778256346.463,
-      "hash:a6639a12": 1778256346.463
+      "hash:a6639a12": 1778256346.463,
+      "guid:https://www.douyin.com/search/%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%EF%BC%9A%E6%B1%89%E5%9D%A6%E7%97%85%E6%AF%92%E6%BD%9C%E4%BC%8F%E6%9C%9F%E9%95%BF%E8%BE%BE6%E5%91%A8": 1778266786.74,
+      "url:https://www.douyin.com/search/%E4%B8%96%E5%8D%AB%E7%BB%84%E7%BB%87%EF%BC%9A%E6%B1%89%E5%9D%A6%E7%97%85%E6%AF%92%E6%BD%9C%E4%BC%8F%E6%9C%9F%E9%95%BF%E8%BE%BE6%E5%91%A8": 1778266786.74,
+      "hash:2e8325b2": 1778266786.74
     },
     "toutiao": {
       "guid:hot-香港1.7亿人民币拿下世界杯转播权": 1778230993.113,
@@ -996,7 +1044,13 @@
       "hash:045d0a50": 1778256080.301,
       "guid:https://www.toutiao.com/trending/7637487465263382570": 1778259727.198,
       "url:https://www.toutiao.com/trending/7637487465263382570": 1778259727.198,
-      "hash:51f1fbe1": 1778259727.198
+      "hash:51f1fbe1": 1778259727.198,
+      "guid:https://www.toutiao.com/trending/7637496021467693099": 1778266786.74,
+      "url:https://www.toutiao.com/trending/7637496021467693099": 1778266786.74,
+      "hash:6f3c13cd": 1778266786.74,
+      "guid:https://www.toutiao.com/trending/7637482346612064262": 1778266786.74,
+      "url:https://www.toutiao.com/trending/7637482346612064262": 1778266786.74,
+      "hash:27850128": 1778266786.74
     },
     "bilibili-hot": {
       "guid:hot-北京JDG 佛山DRG": 1778230993.113,
@@ -1947,7 +2001,19 @@
       "hash:7b3073d8": 1778257122.881,
       "guid:https://m.thepaper.cn/detail/33129675": 1778259122.385,
       "url:https://m.thepaper.cn/detail/33129675": 1778259122.385,
-      "hash:dd7fede3": 1778259122.385
+      "hash:dd7fede3": 1778259122.385,
+      "guid:https://m.thepaper.cn/detail/33132273": 1778266786.741,
+      "url:https://m.thepaper.cn/detail/33132273": 1778266786.741,
+      "hash:85783dd9": 1778266786.741,
+      "guid:https://m.thepaper.cn/detail/33131909": 1778266786.741,
+      "url:https://m.thepaper.cn/detail/33131909": 1778266786.741,
+      "hash:5c2b3e95": 1778266786.741,
+      "guid:https://m.thepaper.cn/detail/33131136": 1778266786.741,
+      "url:https://m.thepaper.cn/detail/33131136": 1778266786.741,
+      "hash:d8404af1": 1778266786.741,
+      "guid:https://m.thepaper.cn/detail/33130558": 1778266786.741,
+      "url:https://m.thepaper.cn/detail/33130558": 1778266786.741,
+      "hash:e10f4325": 1778266786.741
     },
     "guokr": {
       "guid:https://www.guokr.com/article/469110/": 1778235934.81,
