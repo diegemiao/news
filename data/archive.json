@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-05-09T04:06:20.770Z",
+  "last_pruned": "2026-05-09T04:22:38.211Z",
   "seen": {
     "aihot": {
       "guid:cmownduwl00kdslkuwxyxo7l7": 1778230993.092,
@@ -799,7 +799,13 @@
       "hash:aa38b469": 1778299578.529,
       "guid:https://www.ithome.com/0/948/014.htm": 1778299578.529,
       "url:https://www.ithome.com/0/948/014.htm": 1778299578.529,
-      "hash:29217b53": 1778299578.529
+      "hash:29217b53": 1778299578.529,
+      "guid:https://www.ithome.com/0/948/142.htm": 1778300556.623,
+      "url:https://www.ithome.com/0/948/142.htm": 1778300556.623,
+      "hash:3f364362": 1778300556.623,
+      "guid:https://www.ithome.com/0/948/140.htm": 1778300556.623,
+      "url:https://www.ithome.com/0/948/140.htm": 1778300556.623,
+      "hash:1d36ef37": 1778300556.623
     },
     "v2ex-hot": {
       "guid:https://v2ex.com/t/1211033": 1778230993.107,
@@ -1173,7 +1179,13 @@
       "hash:87708982": 1778299578.53,
       "guid:https://s.weibo.com/weibo?q=%E8%B7%91%E7%94%B7%E7%96%AF%E7%8B%82%E8%AF%81%E6%98%8E%E8%87%AA%E5%B7%B1": 1778299578.53,
       "url:https://s.weibo.com/weibo?q=%E8%B7%91%E7%94%B7%E7%96%AF%E7%8B%82%E8%AF%81%E6%98%8E%E8%87%AA%E5%B7%B1": 1778299578.53,
-      "hash:ab940569": 1778299578.53
+      "hash:ab940569": 1778299578.53,
+      "guid:https://s.weibo.com/weibo?q=%E5%88%98%E6%B6%9B%E9%AA%82%E5%93%AD%E6%96%B0%E4%BA%BA%E5%A5%B3%E6%BC%94%E5%91%98": 1778300556.624,
+      "url:https://s.weibo.com/weibo?q=%E5%88%98%E6%B6%9B%E9%AA%82%E5%93%AD%E6%96%B0%E4%BA%BA%E5%A5%B3%E6%BC%94%E5%91%98": 1778300556.624,
+      "hash:495d444b": 1778300556.624,
+      "guid:https://s.weibo.com/weibo?q=%E7%8E%8B%E6%9A%96%E6%9A%96%E8%87%AA%E6%9B%9D%E9%95%BF%E6%9C%9F%E9%81%ADMCN%E5%85%AC%E5%8F%B8%E5%8E%8B%E6%A6%A8": 1778300556.624,
+      "url:https://s.weibo.com/weibo?q=%E7%8E%8B%E6%9A%96%E6%9A%96%E8%87%AA%E6%9B%9D%E9%95%BF%E6%9C%9F%E9%81%ADMCN%E5%85%AC%E5%8F%B8%E5%8E%8B%E6%A6%A8": 1778300556.624,
+      "hash:d5df8ed5": 1778300556.624
     },
     "zhihu-hot": {
       "guid:hot-宇树机器人以佛弟子身份在韩国寺庙受戒，「五戒」要求「不过度充电、不顶撞人类」等，如何看待机器人皈依？": 1778230993.108,
@@ -1288,7 +1300,10 @@
       "hash:605c282b": 1778298136.914,
       "guid:https://www.zhihu.com/question/2017049686331127666": 1778298136.914,
       "url:https://www.zhihu.com/question/2017049686331127666": 1778298136.914,
-      "hash:f7445cf5": 1778298136.914
+      "hash:f7445cf5": 1778298136.914,
+      "guid:https://www.zhihu.com/question/2036214521895891761": 1778300556.624,
+      "url:https://www.zhihu.com/question/2036214521895891761": 1778300556.624,
+      "hash:c2c024da": 1778300556.624
     },
     "baidu-hot": {
       "guid:https://www.baidu.com/s?wd=%E9%A6%99%E6%B8%AF1.7%E4%BA%BF%E6%8B%BF%E4%B8%8B%E4%B8%96%E7%95%8C%E6%9D%AF%E8%BD%AC%E6%92%AD%E6%9D%83&sa=fyb_news&rsv_dl=fyb_news": 1778230993.108,
@@ -1488,7 +1503,10 @@
       "hash:f459e137": 1778299578.53,
       "guid:https://www.baidu.com/s?wd=%E9%9B%A8%E5%A4%A9%E5%BF%98%E5%85%B3%E8%BD%A6%E7%AA%97+%E8%AE%B0%E5%BD%95%E4%BB%AA%E5%BD%95%E4%B8%8B%E6%9A%96%E5%BF%83%E4%B8%80%E5%B9%95&sa=fyb_news&rsv_dl=fyb_news": 1778299578.53,
       "url:https://www.baidu.com/s?wd=%E9%9B%A8%E5%A4%A9%E5%BF%98%E5%85%B3%E8%BD%A6%E7%AA%97+%E8%AE%B0%E5%BD%95%E4%BB%AA%E5%BD%95%E4%B8%8B%E6%9A%96%E5%BF%83%E4%B8%80%E5%B9%95&sa=fyb_news&rsv_dl=fyb_news": 1778299578.53,
-      "hash:84cf6580": 1778299578.53
+      "hash:84cf6580": 1778299578.53,
+      "guid:https://www.baidu.com/s?wd=%E6%AF%9B%E5%AE%81%E7%82%B9%E8%B5%9E%E6%97%A0%E4%BA%BA%E8%A1%8C%E6%9D%8E%E7%AE%B1%E5%A2%99&sa=fyb_news&rsv_dl=fyb_news": 1778300556.624,
+      "url:https://www.baidu.com/s?wd=%E6%AF%9B%E5%AE%81%E7%82%B9%E8%B5%9E%E6%97%A0%E4%BA%BA%E8%A1%8C%E6%9D%8E%E7%AE%B1%E5%A2%99&sa=fyb_news&rsv_dl=fyb_news": 1778300556.624,
+      "hash:c8279f7a": 1778300556.624
     },
     "douyin-hot": {
       "guid:hot-高考倒计时祝考生金榜题名": 1778230993.112,
@@ -1962,7 +1980,10 @@
       "hash:b1499655": 1778299578.531,
       "guid:https://search.bilibili.com/all?keyword=Keria%E9%87%8E%E5%8C%BA%E8%A3%85%E8%9B%A4%E8%9F%86%E6%9C%89%E5%A4%9A%E5%A5%BD%E7%AC%91": 1778299578.531,
       "url:https://search.bilibili.com/all?keyword=Keria%E9%87%8E%E5%8C%BA%E8%A3%85%E8%9B%A4%E8%9F%86%E6%9C%89%E5%A4%9A%E5%A5%BD%E7%AC%91": 1778299578.531,
-      "hash:5515d903": 1778299578.531
+      "hash:5515d903": 1778299578.531,
+      "guid:https://search.bilibili.com/all?keyword=%E6%94%80%E5%B2%A9%E4%B8%96%E7%95%8C%E6%9D%AF%E9%9A%BE%E5%BA%A6%E5%8D%8A%E5%86%B3%E8%B5%9B": 1778300556.625,
+      "url:https://search.bilibili.com/all?keyword=%E6%94%80%E5%B2%A9%E4%B8%96%E7%95%8C%E6%9D%AF%E9%9A%BE%E5%BA%A6%E5%8D%8A%E5%86%B3%E8%B5%9B": 1778300556.625,
+      "hash:3add6bc3": 1778300556.625
     },
     "zhihu-daily": {
       "guid:https://daily.zhihu.com/story/9789487": 1778230993.113,
@@ -2172,7 +2193,13 @@
       "hash:4e8fa139": 1778299578.532,
       "guid:https://36kr.com/newsflashes/3801342492040709?f=rss": 1778299578.532,
       "url:https://36kr.com/newsflashes/3801342492040709?f=rss": 1778299578.532,
-      "hash:306790c4": 1778299578.532
+      "hash:306790c4": 1778299578.532,
+      "guid:https://36kr.com/newsflashes/3801553821654531?f=rss": 1778300556.625,
+      "url:https://36kr.com/newsflashes/3801553821654531?f=rss": 1778300556.625,
+      "hash:eb7ce977": 1778300556.625,
+      "guid:https://36kr.com/newsflashes/3801547699281665?f=rss": 1778300556.625,
+      "url:https://36kr.com/newsflashes/3801547699281665?f=rss": 1778300556.625,
+      "hash:d6b3fc8c": 1778300556.625
     },
     "people-politics": {
       "guid:http://politics.people.com.cn/n1/2025/0605/c1001-40494898.html": 1778230993.115,
@@ -3087,7 +3114,10 @@
       "hash:df23f17a": 1778299578.534,
       "guid:caixin:latest:https://finance.caixin.com/2026-05-09/102442209.html": 1778299578.534,
       "url:https://finance.caixin.com/2026-05-09/102442209.html": 1778299578.534,
-      "hash:9c0697cd": 1778299578.534
+      "hash:9c0697cd": 1778299578.534,
+      "guid:caixin:latest:https://photos.caixin.com/2026-05-09/102442310.html": 1778300556.627,
+      "url:https://photos.caixin.com/2026-05-09/102442310.html": 1778300556.627,
+      "hash:288ebc8f": 1778300556.627
     },
     "bbc-chinese": {
       "guid:https://www.bbc.com/zhongwen/articles/crlpd3enk57o/simp?at_medium=RSS&at_campaign=rss": 1778235316.531,
@@ -3717,7 +3747,40 @@
       "hash:70b27d98": 1778299578.537,
       "guid:https://m.thepaper.cn/papernews/morningEveningPaper?n=164704": 1778299578.537,
       "url:https://m.thepaper.cn/papernews/morningEveningPaper?n=164704": 1778299578.537,
-      "hash:bad64f2e": 1778299578.537
+      "hash:bad64f2e": 1778299578.537,
+      "guid:https://m.thepaper.cn/detail/33138766": 1778300556.631,
+      "url:https://m.thepaper.cn/detail/33138766": 1778300556.631,
+      "hash:13883f7f": 1778300556.631,
+      "guid:https://m.thepaper.cn/detail/33138710": 1778300556.631,
+      "url:https://m.thepaper.cn/detail/33138710": 1778300556.631,
+      "hash:350122eb": 1778300556.631,
+      "guid:https://m.thepaper.cn/detail/33137942": 1778300556.631,
+      "url:https://m.thepaper.cn/detail/33137942": 1778300556.631,
+      "hash:8076e4b9": 1778300556.631,
+      "guid:https://m.thepaper.cn/detail/33137588": 1778300556.631,
+      "url:https://m.thepaper.cn/detail/33137588": 1778300556.631,
+      "hash:32acc689": 1778300556.631,
+      "guid:https://m.thepaper.cn/detail/33137941": 1778300556.631,
+      "url:https://m.thepaper.cn/detail/33137941": 1778300556.631,
+      "hash:2783ed38": 1778300556.631,
+      "guid:https://m.thepaper.cn/detail/33137936": 1778300556.631,
+      "url:https://m.thepaper.cn/detail/33137936": 1778300556.631,
+      "hash:d057d4bb": 1778300556.631,
+      "guid:https://m.thepaper.cn/detail/33137957": 1778300556.631,
+      "url:https://m.thepaper.cn/detail/33137957": 1778300556.631,
+      "hash:1766a8b3": 1778300556.631,
+      "guid:https://m.thepaper.cn/detail/33138815": 1778300556.631,
+      "url:https://m.thepaper.cn/detail/33138815": 1778300556.631,
+      "hash:833125aa": 1778300556.631,
+      "guid:https://m.thepaper.cn/detail/33138495": 1778300556.631,
+      "url:https://m.thepaper.cn/detail/33138495": 1778300556.631,
+      "hash:fbc288e8": 1778300556.631,
+      "guid:https://m.thepaper.cn/detail/33138472": 1778300556.631,
+      "url:https://m.thepaper.cn/detail/33138472": 1778300556.631,
+      "hash:4710511b": 1778300556.631,
+      "guid:https://m.thepaper.cn/detail/33138449": 1778300556.631,
+      "url:https://m.thepaper.cn/detail/33138449": 1778300556.631,
+      "hash:2c44ba5e": 1778300556.631
     },
     "guokr": {
       "guid:https://www.guokr.com/article/469110/": 1778235934.81,
