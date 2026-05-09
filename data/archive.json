@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-05-09T03:52:55.673Z",
+  "last_pruned": "2026-05-09T03:56:00.149Z",
   "seen": {
     "aihot": {
       "guid:cmownduwl00kdslkuwxyxo7l7": 1778230993.092,
@@ -2742,7 +2742,10 @@
       "hash:400264fb": 1778298773.84,
       "guid:https://m.thepaper.cn/detail/33138369": 1778298773.84,
       "url:https://m.thepaper.cn/detail/33138369": 1778298773.84,
-      "hash:7796f979": 1778298773.84
+      "hash:7796f979": 1778298773.84,
+      "guid:https://m.thepaper.cn/detail/33137891": 1778298958.452,
+      "url:https://m.thepaper.cn/detail/33137891": 1778298958.452,
+      "hash:6e4e160d": 1778298958.452
     },
     "guokr": {
       "guid:https://www.guokr.com/article/469110/": 1778235934.81,
