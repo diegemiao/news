@@ -29,6 +29,33 @@ async function main() {
   const articles = await fetchAllFeeds(feeds, settings);
   console.log(`  共抓取 ${articles.length} 篇文章`);
 
+  // Source health check
+  const staleThreshold = 24 * 3600 * 1000; // 24h
+  let staleCount = 0;
+  for (const f of feeds) {
+    const feedArts = articles.filter(a => a.source_id === f.id);
+    if (feedArts.length === 0) {
+      console.log(`  [检测] ${f.name}: 无文章，可能已失效`);
+      staleCount++;
+      continue;
+    }
+    const validArts = feedArts.filter(a => a.published && !isNaN(new Date(a.published)));
+    if (validArts.length === 0) {
+      console.log(`  [检测] ${f.name}: 文章无有效日期，跳过时间检查`);
+      continue;
+    }
+    const latest = validArts.reduce((max, a) => {
+      const d = new Date(a.published);
+      return d > max ? d : max;
+    }, new Date(0));
+    if (Date.now() - latest.getTime() > staleThreshold) {
+      const hoursAgo = Math.floor((Date.now() - latest.getTime()) / 3600000);
+      console.log(`  [检测] ${f.name}: 最新文章 ${hoursAgo}h 前，可能未更新`);
+      staleCount++;
+    }
+  }
+  if (staleCount > 0) console.log(`  [检测] 共 ${staleCount} 个源需关注 (0文章或>24h未更新)`);
+
   // 3. Deduplicate
   console.log('[3/6] 去重...');
   const { newArticles, updatedSeen } = filterNewArticles(articles, archive, isFirstRun);

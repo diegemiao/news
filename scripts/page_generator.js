@@ -1,13 +1,15 @@
 const fs = require('fs');
 const path = require('path');
-const { groupByCategory, formatTime } = require('./utils');
+const { groupByCategory, formatTime, shortTime } = require('./utils');
 
 const TEMPLATE_DIR = path.join(__dirname, '..', 'templates');
 const DOCS_DIR = path.join(__dirname, '..', 'docs');
 
 function generatePage(articles, dateStr, isMorning = true) {
   const template = fs.readFileSync(path.join(TEMPLATE_DIR, 'page.html'), 'utf-8');
-  const grouped = groupByCategory(articles);
+  // Sort by published date (newest first) before grouping
+  const sorted = [...articles].sort((a, b) => (new Date(b.published || 0) - new Date(a.published || 0)));
+  const grouped = groupByCategory(sorted);
   const categories = Object.keys(grouped).sort();
 
   // Tab buttons
@@ -50,12 +52,11 @@ function generatePage(articles, dateStr, isMorning = true) {
 
         articlesHtml += `
         <article class="card" data-cat="${category}">
-          <span class="card-num">${num}</span>
+          <time class="card-time-left">${shortTime(a.published)}</time>
           <div class="card-body">
             <div class="card-meta-top">
               <span class="card-source">${a.source_name}</span>
               ${badge}
-              <span class="card-time">${formatTime(a.published)}</span>
             </div>
             <h3 class="card-title"><a href="${a.url}" onclick="openNewsModal(${num});return false" rel="noopener">${a.title}</a></h3>
             <p class="card-summary">${a.summary}</p>

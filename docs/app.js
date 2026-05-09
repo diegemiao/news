@@ -33,8 +33,6 @@
   var modalBody = document.getElementById('modalBody');
   var modalSource = document.getElementById('modalSource');
   var modalTime = document.getElementById('modalTime');
-  var modalLink = document.getElementById('modalLink');
-  var modalLinkWrap = document.getElementById('modalLinkWrap');
   var modalBtnSource = document.getElementById('modalBtnSource');
   var modalBtnFull = document.getElementById('modalBtnFull');
 
@@ -56,22 +54,19 @@
     modalSource.textContent = d.s || '';
     modalTime.textContent = d.ti || '';
     modalTitle.textContent = d.t || '';
-    modalLink.href = d.u || '#';
+    modalBtnSource.href = d.u || '#';
     fullText = d.f || '';
     isExpanded = false;
 
-    // Show truncated first ~400 chars
-    if (fullText && fullText.length > 400) {
-      modalBody.innerHTML = formatText(fullText.substring(0, 400)) + '<p class="modal-truncate-hint">…</p>';
+    // Show truncated first ~800 chars
+    if (fullText && fullText.length > 800) {
+      modalBody.innerHTML = fullText.substring(0, 800) + '<p class="modal-truncate-hint">…</p>';
       modalBtnFull.style.display = '';
       modalBtnFull.innerHTML = '查看全部 &#9660;';
     } else {
-      modalBody.innerHTML = formatText(fullText);
+      modalBody.innerHTML = fullText || '';
       modalBtnFull.style.display = 'none';
     }
-
-    // Reset link button state
-    modalLinkWrap.classList.remove('show');
 
     overlay.classList.add('show');
     document.body.style.overflow = 'hidden';
@@ -85,22 +80,13 @@
   // Toggle full text
   modalBtnFull.addEventListener('click', function() {
     if (isExpanded) {
-      modalBody.innerHTML = formatText(fullText.substring(0, 400)) + '<p class="modal-truncate-hint">…</p>';
+      modalBody.innerHTML = fullText.substring(0, 800) + '<p class="modal-truncate-hint">…</p>';
       modalBtnFull.innerHTML = '查看全部 &#9660;';
     } else {
-      modalBody.innerHTML = formatText(fullText);
+      modalBody.innerHTML = fullText || '';
       modalBtnFull.innerHTML = '收起 &#9650;';
     }
     isExpanded = !isExpanded;
-  });
-
-  // Toggle source link
-  modalBtnSource.addEventListener('click', function() {
-    if (modalLinkWrap.classList.contains('show')) {
-      modalLinkWrap.classList.remove('show');
-    } else {
-      modalLinkWrap.classList.add('show');
-    }
   });
 
   window.openNewsModal = openModal;

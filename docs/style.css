@@ -98,8 +98,8 @@ body {
   display: flex; gap: 12px; align-items: flex-start;
   background: var(--card-bg);
   border-radius: var(--radius);
-  padding: 14px 16px;
-  margin-bottom: 8px;
+  padding: 12px 14px;
+  margin-bottom: 6px;
   border: 1px solid var(--border);
   transition: box-shadow 0.12s;
   cursor: pointer;
@@ -108,45 +108,40 @@ body {
 .card:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
 .card.hidden { display: none; }
 
-.card-num {
-  flex-shrink: 0;
-  width: 26px; height: 26px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 12px; font-weight: 700;
+.card-time-left {
+  flex-shrink: 0; width: 42px;
+  font-size: 11px; font-weight: 500;
   color: var(--text-secondary);
-  background: var(--tag-bg);
-  border-radius: 6px;
-  margin-top: 1px;
+  text-align: center; line-height: 1.4;
+  padding-top: 2px;
+  font-variant-numeric: tabular-nums;
 }
 
 .card-body { flex: 1; min-width: 0; }
 
 .card-meta-top {
-  display: flex; align-items: center; gap: 8px; margin-bottom: 5px;
+  display: flex; align-items: center; gap: 6px; margin-bottom: 2px;
 }
 
 .card-source {
   font-size: 11px; font-weight: 600; color: var(--accent);
-  letter-spacing: 0.03em;
 }
 
 .card-badge {
   font-size: 10px; font-weight: 600;
-  padding: 1px 7px; border-radius: 100px;
+  padding: 1px 6px; border-radius: 100px;
   background: var(--badge-bg); color: var(--badge-text);
 }
 
 .card-badge.score { background: var(--badge-score-bg); color: var(--badge-score-text); }
 
-.card-time { font-size: 11px; color: #a1a1aa; margin-left: auto; white-space: nowrap; }
-
-.card-title { font-size: 16px; font-weight: 600; line-height: 1.45; margin-bottom: 4px; }
+.card-title { font-size: 15px; font-weight: 600; line-height: 1.45; }
 .card-title a { color: var(--text); text-decoration: none; cursor: pointer; }
 .card-title a:hover { color: var(--accent); }
 
 .card-summary {
   font-size: 13px; color: var(--text-secondary); line-height: 1.55;
-  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+  display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
@@ -247,22 +242,45 @@ body {
   font-size: 12px; color: #a1a1aa;
 }
 
-.modal-title {
-  font-size: 18px; font-weight: 700; line-height: 1.5;
-  color: var(--text); margin-bottom: 14px;
-}
-
 .modal-body {
-  font-size: 14px; line-height: 1.9; color: var(--text-secondary);
+  font-size: 15px; line-height: 2.0; color: var(--text-secondary);
   margin-bottom: 18px;
 }
 .modal-body p {
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   text-align: justify;
   text-indent: 2em;
 }
 .modal-body p:last-child { margin-bottom: 0; }
+.modal-body img {
+  max-width: 100%; height: auto;
+  border-radius: 6px;
+  margin: 8px 0;
+  display: block;
+}
+.modal-body strong, .modal-body b {
+  color: var(--text);
+  font-weight: 700;
+}
+.modal-body h3, .modal-body h4 {
+  font-size: 16px; font-weight: 700;
+  color: var(--text);
+  margin: 16px 0 8px;
+  text-indent: 0;
+}
+.modal-body blockquote {
+  border-left: 3px solid var(--border);
+  padding: 4px 0 4px 14px;
+  margin: 12px 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
 .modal-truncate-hint { text-align: center; color: #a1a1aa; font-size: 16px; margin: 4px 0 !important; }
+
+.modal-title {
+  font-size: 19px; font-weight: 700; line-height: 1.5;
+  color: var(--text); margin-bottom: 16px;
+}
 
 /* Modal actions bar */
 .modal-actions {
@@ -282,19 +300,6 @@ body {
   transition: border-color 0.12s;
 }
 .modal-btn-source:hover { border-color: var(--accent); }
-
-.modal-link-wrap {
-  display: none;
-  flex: 1; min-width: 0;
-}
-.modal-link-wrap.show { display: block; }
-
-.modal-link {
-  display: inline-block;
-  font-size: 13px; font-weight: 600; color: var(--accent);
-  text-decoration: none;
-}
-.modal-link:hover { text-decoration: underline; }
 
 .modal-btn-full {
   flex-shrink: 0;
