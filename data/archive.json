@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-05-09T03:10:52.932Z",
+  "last_pruned": "2026-05-09T03:11:47.114Z",
   "seen": {
     "aihot": {
       "guid:cmownduwl00kdslkuwxyxo7l7": 1778230993.092,
@@ -443,18 +443,18 @@
       "guid:https://www.ithome.com/0/948/082.htm": 1778295864.961,
       "url:https://www.ithome.com/0/948/082.htm": 1778295864.961,
       "hash:260bdca7": 1778295864.961,
-      "guid:https://www.ithome.com/0/948/090.htm": 1778296251.104,
-      "url:https://www.ithome.com/0/948/090.htm": 1778296251.104,
-      "hash:92f37e40": 1778296251.104,
-      "guid:https://www.ithome.com/0/948/089.htm": 1778296251.104,
-      "url:https://www.ithome.com/0/948/089.htm": 1778296251.104,
-      "hash:51e8962e": 1778296251.104,
-      "guid:https://www.ithome.com/0/948/088.htm": 1778296251.104,
-      "url:https://www.ithome.com/0/948/088.htm": 1778296251.104,
-      "hash:7f81c591": 1778296251.104,
-      "guid:https://www.ithome.com/0/948/086.htm": 1778296251.104,
-      "url:https://www.ithome.com/0/948/086.htm": 1778296251.104,
-      "hash:9b0617e3": 1778296251.104
+      "guid:https://www.ithome.com/0/948/090.htm": 1778296305.415,
+      "url:https://www.ithome.com/0/948/090.htm": 1778296305.415,
+      "hash:92f37e40": 1778296305.415,
+      "guid:https://www.ithome.com/0/948/089.htm": 1778296305.415,
+      "url:https://www.ithome.com/0/948/089.htm": 1778296305.415,
+      "hash:51e8962e": 1778296305.415,
+      "guid:https://www.ithome.com/0/948/088.htm": 1778296305.415,
+      "url:https://www.ithome.com/0/948/088.htm": 1778296305.415,
+      "hash:7f81c591": 1778296305.415,
+      "guid:https://www.ithome.com/0/948/086.htm": 1778296305.415,
+      "url:https://www.ithome.com/0/948/086.htm": 1778296305.415,
+      "hash:9b0617e3": 1778296305.415
     },
     "v2ex-hot": {
       "guid:https://v2ex.com/t/1211033": 1778230993.107,
@@ -733,9 +733,12 @@
       "guid:https://s.weibo.com/weibo?q=%E8%B0%83%E4%BC%91": 1778294709.912,
       "url:https://s.weibo.com/weibo?q=%E8%B0%83%E4%BC%91": 1778294709.912,
       "hash:e54c7177": 1778294709.912,
-      "guid:https://s.weibo.com/weibo?q=%E7%8E%8B%E6%9A%96%E6%9A%96%E6%8B%8D%E6%91%84%E6%97%B6%E7%AA%81%E7%84%B6%E5%80%92%E5%9C%B0": 1778296251.104,
-      "url:https://s.weibo.com/weibo?q=%E7%8E%8B%E6%9A%96%E6%9A%96%E6%8B%8D%E6%91%84%E6%97%B6%E7%AA%81%E7%84%B6%E5%80%92%E5%9C%B0": 1778296251.104,
-      "hash:a759d8e2": 1778296251.104
+      "guid:https://s.weibo.com/weibo?q=ChatGPT%E7%9A%84%E6%81%90%E6%80%96%E6%88%91%E5%90%8E%E7%9F%A5%E5%90%8E%E8%A7%89": 1778296305.415,
+      "url:https://s.weibo.com/weibo?q=ChatGPT%E7%9A%84%E6%81%90%E6%80%96%E6%88%91%E5%90%8E%E7%9F%A5%E5%90%8E%E8%A7%89": 1778296305.415,
+      "hash:3251096a": 1778296305.415,
+      "guid:https://s.weibo.com/weibo?q=%E7%8E%8B%E6%9A%96%E6%9A%96%E6%8B%8D%E6%91%84%E6%97%B6%E7%AA%81%E7%84%B6%E5%80%92%E5%9C%B0": 1778296305.415,
+      "url:https://s.weibo.com/weibo?q=%E7%8E%8B%E6%9A%96%E6%9A%96%E6%8B%8D%E6%91%84%E6%97%B6%E7%AA%81%E7%84%B6%E5%80%92%E5%9C%B0": 1778296305.415,
+      "hash:a759d8e2": 1778296305.415
     },
     "zhihu-hot": {
       "guid:hot-宇树机器人以佛弟子身份在韩国寺庙受戒，「五戒」要求「不过度充电、不顶撞人类」等，如何看待机器人皈依？": 1778230993.108,
@@ -845,9 +848,9 @@
       "guid:https://www.zhihu.com/question/2035988452349563474": 1778294153.443,
       "url:https://www.zhihu.com/question/2035988452349563474": 1778294153.443,
       "hash:dc6b93e8": 1778294153.443,
-      "guid:https://www.zhihu.com/question/2035705618498065327": 1778296251.104,
-      "url:https://www.zhihu.com/question/2035705618498065327": 1778296251.104,
-      "hash:605c282b": 1778296251.104
+      "guid:https://www.zhihu.com/question/2035705618498065327": 1778296305.415,
+      "url:https://www.zhihu.com/question/2035705618498065327": 1778296305.415,
+      "hash:605c282b": 1778296305.415
     },
     "baidu-hot": {
       "guid:https://www.baidu.com/s?wd=%E9%A6%99%E6%B8%AF1.7%E4%BA%BF%E6%8B%BF%E4%B8%8B%E4%B8%96%E7%95%8C%E6%9D%AF%E8%BD%AC%E6%92%AD%E6%9D%83&sa=fyb_news&rsv_dl=fyb_news": 1778230993.108,
@@ -1032,7 +1035,10 @@
       "hash:bb5527a7": 1778294709.913,
       "guid:https://www.baidu.com/s?wd=%E5%85%AC%E5%AE%89%E5%B9%B2%E8%AD%A6%E9%9D%9E%E6%B3%95%E6%9F%A5%E8%AF%A2%E4%BF%A1%E6%81%AF+%E5%A4%9A%E4%BA%BA%E8%8E%B7%E5%88%91&sa=fyb_news&rsv_dl=fyb_news": 1778295864.962,
       "url:https://www.baidu.com/s?wd=%E5%85%AC%E5%AE%89%E5%B9%B2%E8%AD%A6%E9%9D%9E%E6%B3%95%E6%9F%A5%E8%AF%A2%E4%BF%A1%E6%81%AF+%E5%A4%9A%E4%BA%BA%E8%8E%B7%E5%88%91&sa=fyb_news&rsv_dl=fyb_news": 1778295864.962,
-      "hash:c2919462": 1778295864.962
+      "hash:c2919462": 1778295864.962,
+      "guid:https://www.baidu.com/s?wd=%E7%BC%85%E7%94%B8%E5%8F%91%E7%8E%B011000%E5%85%8B%E6%8B%89%E5%B7%A8%E5%9E%8B%E7%BA%A2%E5%AE%9D%E7%9F%B3&sa=fyb_news&rsv_dl=fyb_news": 1778296305.416,
+      "url:https://www.baidu.com/s?wd=%E7%BC%85%E7%94%B8%E5%8F%91%E7%8E%B011000%E5%85%8B%E6%8B%89%E5%B7%A8%E5%9E%8B%E7%BA%A2%E5%AE%9D%E7%9F%B3&sa=fyb_news&rsv_dl=fyb_news": 1778296305.416,
+      "hash:cf942f7d": 1778296305.416
     },
     "douyin-hot": {
       "guid:hot-高考倒计时祝考生金榜题名": 1778230993.112,
@@ -1327,9 +1333,9 @@
       "guid:https://www.toutiao.com/trending/7637709406322380314": 1778295864.963,
       "url:https://www.toutiao.com/trending/7637709406322380314": 1778295864.963,
       "hash:267916a3": 1778295864.963,
-      "guid:https://www.toutiao.com/trending/7636552638007427135": 1778296251.105,
-      "url:https://www.toutiao.com/trending/7636552638007427135": 1778296251.105,
-      "hash:bbac3304": 1778296251.105
+      "guid:https://www.toutiao.com/trending/7636552638007427135": 1778296305.416,
+      "url:https://www.toutiao.com/trending/7636552638007427135": 1778296305.416,
+      "hash:bbac3304": 1778296305.416
     },
     "bilibili-hot": {
       "guid:hot-北京JDG 佛山DRG": 1778230993.113,
@@ -1471,12 +1477,15 @@
       "guid:https://search.bilibili.com/all?keyword=%E4%B8%80%E4%B8%AA%E8%A7%86%E9%A2%91%E5%B8%A6%E4%BD%A0%E5%9B%9E%E9%A1%BE%E6%B5%AA%E5%A7%905": 1778295864.963,
       "url:https://search.bilibili.com/all?keyword=%E4%B8%80%E4%B8%AA%E8%A7%86%E9%A2%91%E5%B8%A6%E4%BD%A0%E5%9B%9E%E9%A1%BE%E6%B5%AA%E5%A7%905": 1778295864.963,
       "hash:287f875c": 1778295864.963,
-      "guid:https://search.bilibili.com/all?keyword=%E5%87%A1%E4%BA%BA%E4%BF%AE%E4%BB%99%E4%BC%A0%E6%96%B0%E5%9C%BA%E6%99%AF%E5%8F%91%E5%B8%83": 1778296251.105,
-      "url:https://search.bilibili.com/all?keyword=%E5%87%A1%E4%BA%BA%E4%BF%AE%E4%BB%99%E4%BC%A0%E6%96%B0%E5%9C%BA%E6%99%AF%E5%8F%91%E5%B8%83": 1778296251.105,
-      "hash:f738e307": 1778296251.105,
-      "guid:https://search.bilibili.com/all?keyword=%E8%AE%B8%E4%BB%99%E4%B9%B0%E7%93%9C": 1778296251.105,
-      "url:https://search.bilibili.com/all?keyword=%E8%AE%B8%E4%BB%99%E4%B9%B0%E7%93%9C": 1778296251.105,
-      "hash:e7a698a0": 1778296251.105
+      "guid:https://search.bilibili.com/all?keyword=%E5%87%A1%E4%BA%BA%E4%BF%AE%E4%BB%99%E4%BC%A0%E6%96%B0%E5%9C%BA%E6%99%AF%E5%8F%91%E5%B8%83": 1778296305.416,
+      "url:https://search.bilibili.com/all?keyword=%E5%87%A1%E4%BA%BA%E4%BF%AE%E4%BB%99%E4%BC%A0%E6%96%B0%E5%9C%BA%E6%99%AF%E5%8F%91%E5%B8%83": 1778296305.416,
+      "hash:f738e307": 1778296305.416,
+      "guid:https://search.bilibili.com/all?keyword=%E8%AE%B8%E4%BB%99%E4%B9%B0%E7%93%9C": 1778296305.416,
+      "url:https://search.bilibili.com/all?keyword=%E8%AE%B8%E4%BB%99%E4%B9%B0%E7%93%9C": 1778296305.416,
+      "hash:e7a698a0": 1778296305.416,
+      "guid:https://search.bilibili.com/all?keyword=%E6%94%80%E5%B2%A9%E4%B8%96%E7%95%8C%E6%9D%AF%E9%9A%BE%E5%BA%A6%E5%8D%8A%E5%86%B3%E8%B5%9B": 1778296305.416,
+      "url:https://search.bilibili.com/all?keyword=%E6%94%80%E5%B2%A9%E4%B8%96%E7%95%8C%E6%9D%AF%E9%9A%BE%E5%BA%A6%E5%8D%8A%E5%86%B3%E8%B5%9B": 1778296305.416,
+      "hash:3add6bc3": 1778296305.416
     },
     "zhihu-daily": {
       "guid:https://daily.zhihu.com/story/9789487": 1778230993.113,
@@ -1882,7 +1891,10 @@
       "hash:b913392f": 1778295864.964,
       "guid:https://www.chinanews.com.cn/jk/2026/05-09/10617949.shtml": 1778295864.964,
       "url:https://www.chinanews.com.cn/jk/2026/05-09/10617949.shtml": 1778295864.964,
-      "hash:5a899a1c": 1778295864.964
+      "hash:5a899a1c": 1778295864.964,
+      "guid:https://www.chinanews.com.cn/sh/2026/05-09/10617958.shtml": 1778296305.416,
+      "url:https://www.chinanews.com.cn/sh/2026/05-09/10617958.shtml": 1778296305.416,
+      "hash:b980244f": 1778296305.416
     },
     "sina-sports": {
       "guid:http://go.rss.sina.com.cn/redirect.php?url=/china/j/2018-09-23/doc-ihkmwytn7241824.shtml": 1778230993.116,
@@ -2417,9 +2429,9 @@
       "guid:639136945": 1778295864.965,
       "url:https://m.hupu.com/bbs/639136945": 1778295864.965,
       "hash:4141ffae": 1778295864.965,
-      "guid:639137283": 1778296251.106,
-      "url:https://m.hupu.com/bbs/639137283": 1778296251.106,
-      "hash:5e9a21cc": 1778296251.106
+      "guid:639137283": 1778296305.417,
+      "url:https://m.hupu.com/bbs/639137283": 1778296305.417,
+      "hash:5e9a21cc": 1778296305.417
     },
     "thepaper": {
       "guid:https://m.thepaper.cn/detail/33122989": 1778235316.532,
@@ -2614,9 +2626,9 @@
       "guid:https://m.thepaper.cn/detail/33138270": 1778295864.965,
       "url:https://m.thepaper.cn/detail/33138270": 1778295864.965,
       "hash:cc33d87d": 1778295864.965,
-      "guid:https://m.thepaper.cn/detail/33137928": 1778296251.106,
-      "url:https://m.thepaper.cn/detail/33137928": 1778296251.106,
-      "hash:13f356d8": 1778296251.106
+      "guid:https://m.thepaper.cn/detail/33137928": 1778296305.417,
+      "url:https://m.thepaper.cn/detail/33137928": 1778296305.417,
+      "hash:13f356d8": 1778296305.417
     },
     "guokr": {
       "guid:https://www.guokr.com/article/469110/": 1778235934.81,
@@ -2704,7 +2716,10 @@
       "hash:8f304aea": 1778293463.301,
       "guid:https://www.zaobao.com/news/china/story20260509-9021424": 1778295864.965,
       "url:https://www.zaobao.com/news/china/story20260509-9021424": 1778295864.965,
-      "hash:24d4e08e": 1778295864.965
+      "hash:24d4e08e": 1778295864.965,
+      "guid:https://www.zaobao.com/news/china/story20260509-9021440": 1778296305.417,
+      "url:https://www.zaobao.com/news/china/story20260509-9021440": 1778296305.417,
+      "hash:712a6b31": 1778296305.417
     },
     "zaobao-intl": {
       "guid:https://www.zaobao.com/news/singapore/story20260508-9018558": 1778237525.896,
@@ -2773,9 +2788,9 @@
       "guid:https://www.zaobao.com/news/singapore/story20260509-9021211": 1778294709.916,
       "url:https://www.zaobao.com/news/singapore/story20260509-9021211": 1778294709.916,
       "hash:0d0ac57a": 1778294709.916,
-      "guid:https://www.zaobao.com/news/singapore/story20260509-9020231": 1778296251.106,
-      "url:https://www.zaobao.com/news/singapore/story20260509-9020231": 1778296251.106,
-      "hash:9fb33c18": 1778296251.106
+      "guid:https://www.zaobao.com/news/singapore/story20260509-9020231": 1778296305.417,
+      "url:https://www.zaobao.com/news/singapore/story20260509-9020231": 1778296305.417,
+      "hash:9fb33c18": 1778296305.417
     },
     "espn": {
       "guid:US-EN-48676289": 1778238722.291,
