@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-05-09T06:16:28.100Z",
+  "last_pruned": "2026-05-09T06:27:26.545Z",
   "seen": {
     "aihot": {
       "guid:cmownduwl00kdslkuwxyxo7l7": 1778230993.092,
@@ -904,7 +904,13 @@
       "hash:db9cc6a8": 1778307388.013,
       "guid:https://www.ithome.com/0/948/166.htm": 1778307388.013,
       "url:https://www.ithome.com/0/948/166.htm": 1778307388.013,
-      "hash:447a84ca": 1778307388.013
+      "hash:447a84ca": 1778307388.013,
+      "guid:https://www.ithome.com/0/948/169.htm": 1778308044.732,
+      "url:https://www.ithome.com/0/948/169.htm": 1778308044.732,
+      "hash:50d639f4": 1778308044.732,
+      "guid:https://www.ithome.com/0/948/168.htm": 1778308044.732,
+      "url:https://www.ithome.com/0/948/168.htm": 1778308044.732,
+      "hash:bc519b1e": 1778308044.732
     },
     "v2ex-hot": {
       "guid:https://v2ex.com/t/1211033": 1778230993.107,
@@ -1989,7 +1995,10 @@
       "hash:da8d05ab": 1778307185.571,
       "guid:https://www.toutiao.com/trending/7637302836942127150": 1778307388.016,
       "url:https://www.toutiao.com/trending/7637302836942127150": 1778307388.016,
-      "hash:edf4b0ea": 1778307388.016
+      "hash:edf4b0ea": 1778307388.016,
+      "guid:https://www.toutiao.com/trending/7637705859367288878": 1778308044.733,
+      "url:https://www.toutiao.com/trending/7637705859367288878": 1778308044.733,
+      "hash:0c35d060": 1778308044.733
     },
     "bilibili-hot": {
       "guid:hot-北京JDG 佛山DRG": 1778230993.113,
@@ -2986,7 +2995,16 @@
       "hash:0009b565": 1778307185.573,
       "guid:https://www.chinanews.com.cn/life/2026/05-09/10618021.shtml": 1778307185.573,
       "url:https://www.chinanews.com.cn/life/2026/05-09/10618021.shtml": 1778307185.573,
-      "hash:761a4ea0": 1778307185.573
+      "hash:761a4ea0": 1778307185.573,
+      "guid:https://www.chinanews.com.cn/cul/2026/05-09/10618042.shtml": 1778308044.734,
+      "url:https://www.chinanews.com.cn/cul/2026/05-09/10618042.shtml": 1778308044.734,
+      "hash:0d3efcd7": 1778308044.734,
+      "guid:https://www.chinanews.com.cn/sh/2026/05-09/10618040.shtml": 1778308044.734,
+      "url:https://www.chinanews.com.cn/sh/2026/05-09/10618040.shtml": 1778308044.734,
+      "hash:2c7b33c3": 1778308044.734,
+      "guid:https://www.chinanews.com.cn/cj/2026/05-09/10617982.shtml": 1778308044.734,
+      "url:https://www.chinanews.com.cn/cj/2026/05-09/10617982.shtml": 1778308044.734,
+      "hash:003bc829": 1778308044.734
     },
     "sina-sports": {
       "guid:http://go.rss.sina.com.cn/redirect.php?url=/china/j/2018-09-23/doc-ihkmwytn7241824.shtml": 1778230993.116,
@@ -3307,7 +3325,13 @@
       "hash:21b99de9": 1778307185.58,
       "guid:41959038": 1778307185.58,
       "url:https://wallstreetcn.com/charts/41959038": 1778307185.58,
-      "hash:9654492f": 1778307185.58
+      "hash:9654492f": 1778307185.58,
+      "guid:3771892": 1778308044.735,
+      "url:https://wallstreetcn.com/articles/3771892": 1778308044.735,
+      "hash:6d402d0a": 1778308044.735,
+      "guid:3771893": 1778308044.735,
+      "url:https://wallstreetcn.com/articles/3771893": 1778308044.735,
+      "hash:5f6df13f": 1778308044.735
     },
     "caixin": {
       "guid:caixin:latest:https://www.caixin.com/2026-05-08/102442045.html": 1778235316.531,
@@ -3859,7 +3883,13 @@
       "hash:e742ad5f": 1778307185.583,
       "guid:639139478": 1778307185.583,
       "url:https://m.hupu.com/bbs/639139478": 1778307185.583,
-      "hash:355dd2af": 1778307185.583
+      "hash:355dd2af": 1778307185.583,
+      "guid:639141484": 1778308044.738,
+      "url:https://m.hupu.com/bbs/639141484": 1778308044.738,
+      "hash:db5df80c": 1778308044.738,
+      "guid:639141437": 1778308044.738,
+      "url:https://m.hupu.com/bbs/639141437": 1778308044.738,
+      "hash:4f0bfab5": 1778308044.738
     },
     "thepaper": {
       "guid:https://m.thepaper.cn/detail/33122989": 1778235316.532,
@@ -4164,7 +4194,19 @@
       "hash:353a7484": 1778307185.584,
       "guid:https://m.thepaper.cn/detail/33139057": 1778307185.584,
       "url:https://m.thepaper.cn/detail/33139057": 1778307185.584,
-      "hash:d9365107": 1778307185.584
+      "hash:d9365107": 1778307185.584,
+      "guid:https://m.thepaper.cn/detail/33139684": 1778308044.738,
+      "url:https://m.thepaper.cn/detail/33139684": 1778308044.738,
+      "hash:6ab2c01c": 1778308044.738,
+      "guid:https://m.pai-tech.net/collection/jmd9qzx7?tenantId=10002876": 1778308044.738,
+      "url:https://m.pai-tech.net/collection/jmd9qzx7?tenantId=10002876": 1778308044.738,
+      "hash:d32c22e2": 1778308044.738,
+      "guid:https://m.thepaper.cn/detail/33138749": 1778308044.738,
+      "url:https://m.thepaper.cn/detail/33138749": 1778308044.738,
+      "hash:acee6dfc": 1778308044.738,
+      "guid:https://m.thepaper.cn/detail/33139169": 1778308044.738,
+      "url:https://m.thepaper.cn/detail/33139169": 1778308044.738,
+      "hash:2a080c3d": 1778308044.738
     },
     "guokr": {
       "guid:https://www.guokr.com/article/469110/": 1778235934.81,
@@ -4199,7 +4241,10 @@
       "hash:54270437": 1778299578.534,
       "guid:https://www.guokr.com/article/469120/": 1778307185.581,
       "url:https://www.guokr.com/article/469120": 1778307185.581,
-      "hash:fa74f110": 1778307185.581
+      "hash:fa74f110": 1778307185.581,
+      "guid:https://www.guokr.com/article/469121/": 1778308044.735,
+      "url:https://www.guokr.com/article/469121": 1778308044.735,
+      "hash:e27e050e": 1778308044.735
     },
     "zaobao-china": {
       "guid:https://www.zaobao.com/news/china/story20260508-9018412": 1778237525.896,
@@ -4392,7 +4437,13 @@
       "hash:d53e947c": 1778307185.583,
       "guid:https://www.zaobao.com/news/singapore/story20260509-9021716": 1778307185.583,
       "url:https://www.zaobao.com/news/singapore/story20260509-9021716": 1778307185.583,
-      "hash:da77fa85": 1778307185.583
+      "hash:da77fa85": 1778307185.583,
+      "guid:https://www.zaobao.com/news/singapore/story20260509-9022080": 1778308044.737,
+      "url:https://www.zaobao.com/news/singapore/story20260509-9022080": 1778308044.737,
+      "hash:6ccd78fa": 1778308044.737,
+      "guid:https://www.zaobao.com/news/singapore/story20260509-9022044": 1778308044.737,
+      "url:https://www.zaobao.com/news/singapore/story20260509-9022044": 1778308044.737,
+      "hash:eb1a0683": 1778308044.737
     },
     "espn": {
       "guid:US-EN-48676289": 1778238722.291,
