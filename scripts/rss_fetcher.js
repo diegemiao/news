@@ -1,5 +1,5 @@
 const RssParser = require('rss-parser');
-const { truncate, stripHtml, wrapParagraphs, sleep } = require('./utils');
+const { truncate, stripHtml, modalHtml, wrapParagraphs, sleep } = require('./utils');
 
 const parser = new RssParser({
   timeout: 30000,
@@ -31,7 +31,7 @@ async function fetchFeed(feedConfig, settings) {
         title: buildTitle(rawTitle, fullText, feedConfig.name),
         url: item.link || '',
         summary: truncate(fullText, 100),
-        full_summary: wrapParagraphs(fullText),
+        full_summary: modalHtml(item.content || item.contentSnippet || ''),
         comments: parseCommentCount(item),
         source_name: feedConfig.name,
         source_id: feedConfig.id,

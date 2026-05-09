@@ -52,9 +52,33 @@ function stripHtml(str) {
 
 function wrapParagraphs(text) {
   if (!text) return '';
-  const parts = text.split(/(?<=[。！？])\s*/);
-  if (parts.length <= 2) return `<p>${text}</p>`;
-  return parts.filter(p => p.trim()).map(p => `<p>${p.trim()}</p>`).join('');
+  return text.split(/\n{2,}/).filter(p => p.trim()).map(p => `<p>${p.trim()}</p>`).join('');
+}
+
+// Light sanitize: keep only paragraph structure + bold
+function modalHtml(html) {
+  if (!html) return '';
+  let out = html
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '')
+    .replace(/<!--[\s\S]*?-->/g, '');
+  const keep = ['p', 'br', 'strong', 'b'];
+  const keepClose = new Set(keep);
+  out = out.replace(/<[^>]+>/g, (match) => {
+    const m = match.match(/^<\/?(\w+)/);
+    if (!m) return '';
+    const tag = m[1].toLowerCase();
+    if (keep.includes(tag) && !match.startsWith('</')) return '<' + tag + '>';
+    if (keepClose.has(tag) && match.startsWith('</')) return match;
+    return '';
+  });
+  out = out.replace(/<p>\s*<\/p>/g, '').replace(/\n{3,}/g, '\n\n').trim();
+  if (!out) {
+    // Fallback: wrap plain text in paragraphs
+    const text = stripHtml(html);
+    return text.split(/\n{2,}/).filter(p => p.trim()).map(p => `<p>${p.trim()}</p>`).join('');
+  }
+  return out;
 }
 
 function sanitizeHtml(html) {
@@ -90,4 +114,4 @@ function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-module.exports = { groupByCategory, formatTime, shortTime, truncate, stripHtml, sanitizeHtml, wrapParagraphs, sleep };
+module.exports = { groupByCategory, formatTime, shortTime, truncate, stripHtml, sanitizeHtml, modalHtml, wrapParagraphs, sleep };

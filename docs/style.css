@@ -249,7 +249,6 @@ body {
 .modal-body p {
   margin-bottom: 14px;
   text-align: justify;
-  text-indent: 2em;
 }
 .modal-body p:last-child { margin-bottom: 0; }
 .modal-body img {
