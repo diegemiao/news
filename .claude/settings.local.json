@@ -20,7 +20,8 @@
       "Bash(git push *)",
       "Bash(powershell.exe -Command \"Invoke-Item 'C:\\\\Users\\\\win11\\\\Desktop\\\\news\\\\docs\\\\index.html'\")",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git tag *)"
     ]
   }
 }

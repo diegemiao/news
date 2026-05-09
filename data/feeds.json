@@ -409,8 +409,8 @@
     }
   ],
   "settings": {
-    "max_articles_per_feed": 5,
-    "max_total_articles": 120,
+    "max_articles_per_feed": 50,
+    "max_total_articles": 300,
     "fetch_timeout_ms": 30000,
     "max_retries": 2,
     "archive_retention_days": 30,
