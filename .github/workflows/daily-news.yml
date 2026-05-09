@@ -1,4 +1,4 @@
-name: Daily News Digest
+name: Daily News Digest v2
 
 on:
   schedule:

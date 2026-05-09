@@ -150,22 +150,35 @@ async function main() {
       return;
     }
     const chatId = process.env.FEISHU_CHAT_ID;
-    console.log('[飞书] 检查消息...');
-    const commands = await pollMessages(chatId);
-    if (commands.length > 0) {
-      const hasEmail = commands.some(c => c.text === '1234');
-      const label = hasEmail ? '收到，推送+邮件…' : '收到，推送中…';
-      console.log(`[飞书] 发现 ${commands.length} 条推送指令`);
-      await sendText(chatId, label);
-      const ok = await triggerPipeline(hasEmail);
-      if (ok) {
-        console.log('[飞书] Pipeline 已触发');
-      } else {
-        await sendText(chatId, '触发失败，请稍后重试');
+    const bj = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }));
+    const bjHour = bj.getHours();
+    const bjMin = bj.getMinutes();
+    const bjTime = bjHour * 100 + bjMin;
+    const isScheduleTime = (bjTime >= 900 && bjTime < 910) || (bjTime >= 1800 && bjTime < 1810);
+
+    // Check for user commands
+    if ((bjHour >= 10 && bjHour < 18) || (bjHour >= 19 && bjHour < 23)) {
+      console.log('[飞书] 检查消息...');
+      const commands = await pollMessages(chatId);
+      if (commands.length > 0) {
+        const hasEmail = commands.some(c => c.text === '1234');
+        const label = hasEmail ? '收到，推送+邮件…' : '收到，推送中…';
+        console.log(`[飞书] 发现 ${commands.length} 条推送指令`);
+        await sendText(chatId, label);
+        const ok = await triggerPipeline(hasEmail);
+        if (!ok) await sendText(chatId, '触发失败，请稍后重试');
+        return;
       }
-    } else {
-      console.log('[飞书] 无推送指令');
     }
+
+    // Scheduled push
+    if (isScheduleTime) {
+      console.log('[飞书] 定时推送触发');
+      await triggerPipeline(false);
+      return;
+    }
+
+    console.log(`[飞书] 跳过 (北京${bjHour}点，非轮询/定时窗口)`);
     return;
   }
 

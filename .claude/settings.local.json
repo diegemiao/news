@@ -21,7 +21,17 @@
       "Bash(powershell.exe -Command \"Invoke-Item 'C:\\\\Users\\\\win11\\\\Desktop\\\\news\\\\docs\\\\index.html'\")",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git tag *)"
+      "Bash(git tag *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh\" workflow run daily-news.yml)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh\" run list --workflow=daily-news.yml --limit=1 --json status,conclusion)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh\" run view 25591226789 --log)",
+      "Bash(curl -s --max-time 10 \"https://diegemiao.github.io/news/\")",
+      "Bash(\"/c/Program Files/GitHub CLI/gh\" api repos/diegemiao/news/contents/.github/workflows/feishu-poll.yml --jq '.content')",
+      "Bash(git checkout *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh\" api repos/diegemiao/news/commits/master --jq '.commit.message')",
+      "Bash(/c/Program Files/GitHub CLI/gh workflow *)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh\" run view 25593673502 --json status,conclusion)",
+      "Bash(\"/c/Program Files/GitHub CLI/gh\" run view 25593673502 --log)"
     ]
   }
 }
