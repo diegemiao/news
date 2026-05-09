@@ -154,7 +154,7 @@ async function main() {
     const bjHour = bj.getHours();
     const bjMin = bj.getMinutes();
     const bjTime = bjHour * 100 + bjMin;
-    const isScheduleTime = (bjTime >= 900 && bjTime < 910) || (bjTime >= 1800 && bjTime < 1810);
+    const isScheduleTime = (bjTime >= 900 && bjTime < 930) || (bjTime >= 1800 && bjTime < 1830);
 
     // Check for user commands
     if ((bjHour >= 10 && bjHour < 18) || (bjHour >= 19 && bjHour < 23)) {
