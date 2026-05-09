@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-05-09T14:21:15.798Z",
+  "last_pruned": "2026-05-09T14:37:34.581Z",
   "seen": {
     "aihot": {
       "guid:cmownduwl00kdslkuwxyxo7l7": 1778230993.092,
@@ -170,7 +170,10 @@
       "hash:92c445f2": 1778336473.801,
       "guid:cmoy1o13r06ctsllhpqx9kt9w": 1778336473.801,
       "url:https://github.com/regent-vcs/re_gent": 1778336473.801,
-      "hash:d586bc50": 1778336473.801
+      "hash:d586bc50": 1778336473.801,
+      "guid:cmoyfv7w109jasllhbhhkbpvb": 1778337451.392,
+      "url:https://x.com/steipete/status/2053114837698249190": 1778337451.392,
+      "hash:775baf7f": 1778337451.392
     },
     "huggingface-papers": {
       "guid:https://arxiv.org/abs/2605.06416": 1778230993.105,
@@ -1150,7 +1153,10 @@
       "hash:641661df": 1778336473.804,
       "guid:https://www.ithome.com/0/948/253.htm": 1778336473.804,
       "url:https://www.ithome.com/0/948/253.htm": 1778336473.804,
-      "hash:7f9033a1": 1778336473.804
+      "hash:7f9033a1": 1778336473.804,
+      "guid:https://www.ithome.com/0/948/373.htm": 1778337451.394,
+      "url:https://www.ithome.com/0/948/373.htm": 1778337451.394,
+      "hash:06486abc": 1778337451.394
     },
     "v2ex-hot": {
       "guid:https://v2ex.com/t/1211033": 1778230993.107,
@@ -1620,7 +1626,10 @@
       "hash:5dcad7ef": 1778336473.805,
       "guid:https://s.weibo.com/weibo?q=%E6%B5%AA%E5%A7%9048%E6%9D%A5%E4%BA%86": 1778336473.805,
       "url:https://s.weibo.com/weibo?q=%E6%B5%AA%E5%A7%9048%E6%9D%A5%E4%BA%86": 1778336473.805,
-      "hash:52ca7257": 1778336473.805
+      "hash:52ca7257": 1778336473.805,
+      "guid:https://s.weibo.com/weibo?q=%E5%B9%BF%E4%B8%9C%E7%94%B7%E7%AF%AE%E7%BB%9D%E6%9D%80": 1778337451.395,
+      "url:https://s.weibo.com/weibo?q=%E5%B9%BF%E4%B8%9C%E7%94%B7%E7%AF%AE%E7%BB%9D%E6%9D%80": 1778337451.395,
+      "hash:9c3d7ded": 1778337451.395
     },
     "zhihu-hot": {
       "guid:hot-宇树机器人以佛弟子身份在韩国寺庙受戒，「五戒」要求「不过度充电、不顶撞人类」等，如何看待机器人皈依？": 1778230993.108,
@@ -2028,7 +2037,10 @@
       "hash:275aaf5a": 1778336473.806,
       "guid:https://www.baidu.com/s?wd=%E8%B5%96%E6%B8%85%E5%BE%B7%E8%B7%AA%E6%8B%9C%E6%97%A5%E6%9C%AC%E6%AE%96%E6%B0%91%E8%80%85&sa=fyb_news&rsv_dl=fyb_news": 1778336473.806,
       "url:https://www.baidu.com/s?wd=%E8%B5%96%E6%B8%85%E5%BE%B7%E8%B7%AA%E6%8B%9C%E6%97%A5%E6%9C%AC%E6%AE%96%E6%B0%91%E8%80%85&sa=fyb_news&rsv_dl=fyb_news": 1778336473.806,
-      "hash:480233cd": 1778336473.806
+      "hash:480233cd": 1778336473.806,
+      "guid:https://www.baidu.com/s?wd=%E5%AE%B6%E9%95%BF%E6%8E%A7%E8%AF%89Cosplay%E7%AD%89%E4%BA%8C%E6%AC%A1%E5%85%83%E6%AF%81%E6%8E%89%E5%AD%A9%E5%AD%90&sa=fyb_news&rsv_dl=fyb_news": 1778337451.396,
+      "url:https://www.baidu.com/s?wd=%E5%AE%B6%E9%95%BF%E6%8E%A7%E8%AF%89Cosplay%E7%AD%89%E4%BA%8C%E6%AC%A1%E5%85%83%E6%AF%81%E6%8E%89%E5%AD%A9%E5%AD%90&sa=fyb_news&rsv_dl=fyb_news": 1778337451.396,
+      "hash:8d7f94ba": 1778337451.396
     },
     "douyin-hot": {
       "guid:hot-高考倒计时祝考生金榜题名": 1778230993.112,
@@ -2149,7 +2161,10 @@
       "hash:d128f6c3": 1778336473.806,
       "guid:https://www.douyin.com/search/%E6%AF%94%E4%BA%9A%E8%BF%AA%E5%90%A6%E8%AE%A4%E8%A2%AB%E7%BA%A6%E8%B0%88": 1778336473.806,
       "url:https://www.douyin.com/search/%E6%AF%94%E4%BA%9A%E8%BF%AA%E5%90%A6%E8%AE%A4%E8%A2%AB%E7%BA%A6%E8%B0%88": 1778336473.806,
-      "hash:cf6e7c74": 1778336473.806
+      "hash:cf6e7c74": 1778336473.806,
+      "guid:https://www.douyin.com/search/%E9%A2%84%E8%AE%A15%E6%9C%88%E8%BF%9B%E5%85%A5%E5%8E%84%E5%B0%94%E5%B0%BC%E8%AF%BA%E7%8A%B6%E6%80%81": 1778337451.396,
+      "url:https://www.douyin.com/search/%E9%A2%84%E8%AE%A15%E6%9C%88%E8%BF%9B%E5%85%A5%E5%8E%84%E5%B0%94%E5%B0%BC%E8%AF%BA%E7%8A%B6%E6%80%81": 1778337451.396,
+      "hash:aa0d9803": 1778337451.396
     },
     "toutiao": {
       "guid:hot-香港1.7亿人民币拿下世界杯转播权": 1778230993.113,
@@ -2424,7 +2439,13 @@
       "hash:f3c4767e": 1778336473.806,
       "guid:https://www.toutiao.com/trending/7637360532203077695": 1778336473.806,
       "url:https://www.toutiao.com/trending/7637360532203077695": 1778336473.806,
-      "hash:bfdb5fbc": 1778336473.806
+      "hash:bfdb5fbc": 1778336473.806,
+      "guid:https://www.toutiao.com/trending/7637712573017767942": 1778337451.396,
+      "url:https://www.toutiao.com/trending/7637712573017767942": 1778337451.396,
+      "hash:e883c5c2": 1778337451.396,
+      "guid:https://www.toutiao.com/trending/7637855514340101683": 1778337451.396,
+      "url:https://www.toutiao.com/trending/7637855514340101683": 1778337451.396,
+      "hash:d640cea5": 1778337451.396
     },
     "bilibili-hot": {
       "guid:hot-北京JDG 佛山DRG": 1778230993.113,
@@ -2643,7 +2664,10 @@
       "hash:e79d6d63": 1778336473.806,
       "guid:https://search.bilibili.com/all?keyword=NIP%20IG": 1778336473.806,
       "url:https://search.bilibili.com/all?keyword=NIP+IG": 1778336473.806,
-      "hash:2f27f3aa": 1778336473.806
+      "hash:2f27f3aa": 1778336473.806,
+      "guid:https://search.bilibili.com/all?keyword=%E6%98%9F%E7%A9%BA%E5%8D%AB%E8%A7%86%E5%81%9C%E6%92%AD%E7%BA%AA%E5%BF%B5": 1778337451.396,
+      "url:https://search.bilibili.com/all?keyword=%E6%98%9F%E7%A9%BA%E5%8D%AB%E8%A7%86%E5%81%9C%E6%92%AD%E7%BA%AA%E5%BF%B5": 1778337451.396,
+      "hash:ad616924": 1778337451.396
     },
     "zhihu-daily": {
       "guid:https://daily.zhihu.com/story/9789487": 1778230993.113,
@@ -4314,7 +4338,10 @@
       "hash:d08dc009": 1778336473.809,
       "guid:caixin:latest:https://international.caixin.com/2026-05-09/102442431.html": 1778336473.809,
       "url:https://international.caixin.com/2026-05-09/102442431.html": 1778336473.809,
-      "hash:f30aa8d2": 1778336473.809
+      "hash:f30aa8d2": 1778336473.809,
+      "guid:caixin:latest:https://www.caixin.com/2026-05-09/102442673.html": 1778337451.399,
+      "url:https://www.caixin.com/2026-05-09/102442673.html": 1778337451.399,
+      "hash:a2540fd9": 1778337451.399
     },
     "bbc-chinese": {
       "guid:https://www.bbc.com/zhongwen/articles/crlpd3enk57o/simp?at_medium=RSS&at_campaign=rss": 1778235316.531,
@@ -4873,7 +4900,34 @@
       "hash:929c2196": 1778336473.814,
       "guid:639145846": 1778336473.814,
       "url:https://m.hupu.com/bbs/639145846": 1778336473.814,
-      "hash:6984dcdb": 1778336473.814
+      "hash:6984dcdb": 1778336473.814,
+      "guid:639152709": 1778337451.403,
+      "url:https://m.hupu.com/bbs/639152709": 1778337451.403,
+      "hash:57093eec": 1778337451.403,
+      "guid:639152656": 1778337451.403,
+      "url:https://m.hupu.com/bbs/639152656": 1778337451.403,
+      "hash:f74b2e44": 1778337451.403,
+      "guid:639152614": 1778337451.403,
+      "url:https://m.hupu.com/bbs/639152614": 1778337451.403,
+      "hash:0839d977": 1778337451.403,
+      "guid:639152506": 1778337451.403,
+      "url:https://m.hupu.com/bbs/639152506": 1778337451.403,
+      "hash:f97ee728": 1778337451.403,
+      "guid:639152373": 1778337451.403,
+      "url:https://m.hupu.com/bbs/639152373": 1778337451.403,
+      "hash:1ff10fff": 1778337451.403,
+      "guid:639152326": 1778337451.403,
+      "url:https://m.hupu.com/bbs/639152326": 1778337451.403,
+      "hash:a95d69df": 1778337451.403,
+      "guid:639152313": 1778337451.403,
+      "url:https://m.hupu.com/bbs/639152313": 1778337451.403,
+      "hash:bb7a5be2": 1778337451.403,
+      "guid:639142395": 1778337451.403,
+      "url:https://m.hupu.com/bbs/639142395": 1778337451.403,
+      "hash:890ed1c8": 1778337451.403,
+      "guid:639152269": 1778337451.403,
+      "url:https://m.hupu.com/bbs/639152269": 1778337451.403,
+      "hash:30e8beae": 1778337451.403
     },
     "thepaper": {
       "guid:https://m.thepaper.cn/detail/33122989": 1778235316.532,
@@ -5280,7 +5334,28 @@
       "hash:91dc160a": 1778336473.814,
       "guid:https://m.thepaper.cn/detail/33143177": 1778336473.814,
       "url:https://m.thepaper.cn/detail/33143177": 1778336473.814,
-      "hash:eabeaa13": 1778336473.814
+      "hash:eabeaa13": 1778336473.814,
+      "guid:https://m.thepaper.cn/detail/33145153": 1778337451.404,
+      "url:https://m.thepaper.cn/detail/33145153": 1778337451.404,
+      "hash:8242b65c": 1778337451.404,
+      "guid:https://m.thepaper.cn/detail/33145170": 1778337451.404,
+      "url:https://m.thepaper.cn/detail/33145170": 1778337451.404,
+      "hash:3f2c8532": 1778337451.404,
+      "guid:https://m.thepaper.cn/detail/33145145": 1778337451.404,
+      "url:https://m.thepaper.cn/detail/33145145": 1778337451.404,
+      "hash:af38c1cb": 1778337451.404,
+      "guid:https://m.thepaper.cn/detail/33145164": 1778337451.404,
+      "url:https://m.thepaper.cn/detail/33145164": 1778337451.404,
+      "hash:c331a2c3": 1778337451.404,
+      "guid:https://m.thepaper.cn/detail/33145149": 1778337451.404,
+      "url:https://m.thepaper.cn/detail/33145149": 1778337451.404,
+      "hash:07feb822": 1778337451.404,
+      "guid:https://m.thepaper.cn/detail/33145148": 1778337451.404,
+      "url:https://m.thepaper.cn/detail/33145148": 1778337451.404,
+      "hash:631e5b55": 1778337451.404,
+      "guid:https://m.thepaper.cn/detail/33145156": 1778337451.404,
+      "url:https://m.thepaper.cn/detail/33145156": 1778337451.404,
+      "hash:bbb14f99": 1778337451.404
     },
     "guokr": {
       "guid:https://www.guokr.com/article/469110/": 1778235934.81,
