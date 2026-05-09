@@ -38,14 +38,8 @@
 
   var data = window.newsData || [];
   var fullText = '';
+  var shortText = '';
   var isExpanded = false;
-
-  function formatText(text) {
-    var parts = text.split(/(?<=[。！？])\s*/);
-    if (parts.length <= 2) parts = text.split(/\n+/);
-    return parts.filter(function(p) { return p.trim().length > 0; })
-      .map(function(p) { return '<p>' + p.trim() + '</p>'; }).join('');
-  }
 
   function openModal(n) {
     var d = data[n];
@@ -58,9 +52,10 @@
     fullText = d.f || '';
     isExpanded = false;
 
-    // Show truncated first ~800 chars
-    if (fullText && fullText.length > 800) {
-      modalBody.innerHTML = fullText.substring(0, 800) + '<p class="modal-truncate-hint">…</p>';
+    var paras = fullText.split('</p>').filter(function(p) { return p.trim(); });
+    if (paras.length > 3) {
+      shortText = paras.slice(0, 3).join('</p>') + '</p><p class="modal-truncate-hint">…</p>';
+      modalBody.innerHTML = shortText;
       modalBtnFull.style.display = '';
       modalBtnFull.innerHTML = '查看全部 &#9660;';
     } else {
@@ -77,10 +72,9 @@
     document.body.style.overflow = '';
   }
 
-  // Toggle full text
   modalBtnFull.addEventListener('click', function() {
     if (isExpanded) {
-      modalBody.innerHTML = fullText.substring(0, 800) + '<p class="modal-truncate-hint">…</p>';
+      modalBody.innerHTML = shortText;
       modalBtnFull.innerHTML = '查看全部 &#9660;';
     } else {
       modalBody.innerHTML = fullText || '';
@@ -96,12 +90,10 @@
     closeBtn.addEventListener('click', closeModal);
   }
 
-  // Click overlay backdrop to close
   overlay.addEventListener('click', function(e) {
     if (e.target === overlay) closeModal();
   });
 
-  // ESC to close
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && overlay.classList.contains('show')) {
       closeModal();
