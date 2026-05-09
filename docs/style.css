@@ -203,20 +203,24 @@ body {
   background: rgba(0,0,0,0.45);
   z-index: 1000;
   justify-content: center; align-items: flex-start;
-  padding: 48px 16px 16px;
-  overflow-y: auto;
+  padding: 32px 12px 12px;
+  overflow-y: auto; overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
 }
 .modal-overlay.show { display: flex; }
 
 .modal-box {
   background: var(--card-bg);
   border-radius: var(--radius);
-  max-width: 600px; width: 100%;
-  padding: 28px 24px 24px;
+  max-width: 560px; width: 100%;
+  margin: 0 auto;
+  padding: 24px 16px 20px;
   position: relative;
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   animation: modalIn 0.2s ease;
+  box-sizing: border-box;
+  word-wrap: break-word; overflow-wrap: break-word;
 }
 @keyframes modalIn {
   from { opacity: 0; transform: translateY(12px); }
@@ -251,8 +255,11 @@ body {
   text-align: justify;
 }
 .modal-body p:last-child { margin-bottom: 0; }
-.modal-body img {
+.modal-body img, .modal-body pre, .modal-body code, .modal-body table {
   max-width: 100%; height: auto;
+  overflow-x: auto;
+}
+.modal-body img {
   border-radius: 6px;
   margin: 8px 0;
   display: block;
