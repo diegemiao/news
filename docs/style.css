@@ -26,10 +26,10 @@
     --card-bg: #18181b;
     --text: #f4f4f5;
     --text-secondary: #a1a1aa;
-    --accent: #60a5fa;
+    --accent: #93bbfc;
     --border: #27272a;
     --tag-bg: #27272a;
-    --tag-text: #a1a1aa;
+    --tag-text: #d4d4d8;
     --tag-active-bg: #f4f4f5;
     --tag-active-text: #18181b;
     --badge-bg: #450a0a;
@@ -37,6 +37,9 @@
     --badge-score-bg: #052e16;
     --badge-score-text: #86efac;
   }
+  .modal-overlay { background: rgba(0,0,0,0.65); }
+  .card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+  .hot-pill:hover { box-shadow: 0 1px 6px rgba(0,0,0,0.3); }
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -66,7 +69,7 @@ body {
 }
 
 .tab {
-  padding: 5px 14px;
+  padding: 8px 16px;
   border: 1px solid var(--border);
   border-radius: 100px;
   font-size: 13px; font-weight: 500;
@@ -74,6 +77,11 @@ body {
   color: var(--tag-text);
   cursor: pointer;
   transition: background 0.12s, color 0.12s;
+  min-height: 44px;
+}
+.tab:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 .tab.active { background: var(--tag-active-bg); color: var(--tag-active-text); }
 .tab-count { margin-left: 4px; font-size: 11px; opacity: 0.7; }
@@ -228,13 +236,16 @@ body {
 }
 
 .modal-close {
-  position: absolute; top: 12px; right: 16px;
+  position: absolute; top: 8px; right: 12px;
   background: none; border: none;
-  font-size: 22px; color: var(--text-secondary);
+  font-size: 24px; color: var(--text-secondary);
   cursor: pointer; line-height: 1;
-  padding: 4px;
+  padding: 10px;
+  min-width: 44px; min-height: 44px;
+  border-radius: 6px;
 }
-.modal-close:hover { color: var(--text); }
+.modal-close:hover { color: var(--text); background: var(--tag-bg); }
+.modal-close:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
 
 .modal-header {
   display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
@@ -320,6 +331,25 @@ body {
   transition: border-color 0.12s, color 0.12s;
 }
 .modal-btn-full:hover { border-color: var(--accent); color: var(--accent); }
+
+/* Focus & accessibility */
+.card:focus-visible, .hot-pill:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: var(--radius);
+}
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 
 /* Card clickable */
 .card { cursor: pointer; }

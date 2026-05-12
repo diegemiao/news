@@ -31,7 +31,19 @@
       "Bash(\"/c/Program Files/GitHub CLI/gh\" api repos/diegemiao/news/commits/master --jq '.commit.message')",
       "Bash(/c/Program Files/GitHub CLI/gh workflow *)",
       "Bash(\"/c/Program Files/GitHub CLI/gh\" run view 25593673502 --json status,conclusion)",
-      "Bash(\"/c/Program Files/GitHub CLI/gh\" run view 25593673502 --log)"
+      "Bash(\"/c/Program Files/GitHub CLI/gh\" run view 25593673502 --log)",
+      "Bash(mkdir -p /c/Users/win11/Desktop/news-python/scripts /c/Users/win11/Desktop/news-python/data /c/Users/win11/Desktop/news-python/templates /c/Users/win11/Desktop/news-python/docs /c/Users/win11/Desktop/news-python/.github/workflows)",
+      "Bash(cp /c/Users/win11/Desktop/news/data/feeds.json /c/Users/win11/Desktop/news-python/data/)",
+      "Bash(cp /c/Users/win11/Desktop/news/templates/page.html /c/Users/win11/Desktop/news-python/templates/)",
+      "Bash(cp /c/Users/win11/Desktop/news/templates/email.html /c/Users/win11/Desktop/news-python/templates/)",
+      "Bash(cp /c/Users/win11/Desktop/news/docs/app.js /c/Users/win11/Desktop/news-python/docs/)",
+      "Bash(\"/c/Users/win11/AppData/Local/Programs/Python/Python312/python\" scripts/main.py)",
+      "Bash(PYTHONPATH=/c/Users/win11/Desktop/news-python \"/c/Users/win11/AppData/Local/Programs/Python/Python312/python\" scripts/main.py)",
+      "Bash(/c/Users/win11/AppData/Local/Programs/Python/Python312/python *)",
+      "Bash(powershell.exe *)",
+      "Bash(git init *)",
+      "Bash(git config *)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ]
   }
 }
