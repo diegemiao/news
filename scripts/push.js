@@ -1,8 +1,9 @@
 // Push generated files to GitHub via API
 const fs = require('fs');
 const path = require('path');
+const { execSync } = require('child_process');
 
-const TOKEN = process.env.GH_TOKEN || '';
+const TOKEN = execSync('"C:\\Program Files\\GitHub CLI\\gh.exe" auth token', { encoding: 'utf-8' }).trim();
 const REPO = 'diegemiao/news';
 
 async function ghAPI(method, endpoint, body = null) {
