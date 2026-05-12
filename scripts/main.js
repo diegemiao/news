@@ -102,27 +102,6 @@ async function main() {
   if (displayArticles.length > 0 || isFirstRun) {
     generatePage(displayArticles, dateStr, isMorning);
     console.log('  网页 → docs/index.html');
-
-    // Email: only when explicitly requested (SEND_EMAIL=true or locally without feishu)
-    const shouldEmail = process.env.SEND_EMAIL === 'true' || (!process.env.FEISHU_APP_ID && process.env.SMTP_HOST);
-    if (shouldEmail) {
-      await sendDigestEmail(displayArticles, dateStr, isMorning);
-    } else {
-      console.log('  [跳过邮件] 仅飞书推送');
-      const fs = require('fs');
-      const path = require('path');
-      fs.writeFileSync(path.join(__dirname, '..', 'docs', 'email-preview.html'), '', 'utf-8');
-    }
-    // Feishu notification
-    try {
-      const { sendText, isConfigured } = require('./feishu');
-      if (isConfigured()) {
-        const label = `${isMorning ? '早间' : '晚间'}新闻速递 | ${dateStr} · ${displayArticles.length}篇`;
-        const ts = Date.now().toString(36);
-        await sendText(process.env.FEISHU_CHAT_ID, `📰 ${label}\nhttps://diegemiao.github.io/news/?t=${ts}`);
-        console.log('  [飞书] 链接已发送');
-      }
-    } catch (e) { /* feishu not configured — skip */ }
   } else {
     console.log('  无时效内文章，跳过生成');
   }
