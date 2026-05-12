@@ -1,6 +1,5 @@
 {
   "_help": "新闻源配置文件。type支持: rss(标准RSS/Atom) | rsshub(RSSHub路由) | api(JSON API)。enabled: true启用/false暂停。可直接编辑此文件增删源。",
-
   "feeds": [
     {
       "id": "aihot",
@@ -100,66 +99,6 @@
       "category": "科技",
       "enabled": true,
       "note": "少数派作者社区"
-    },
-    {
-      "id": "weibo",
-      "name": "微博热搜",
-      "url": "https://60s.viki.moe/v2/weibo",
-      "type": "api",
-      "category": "热搜",
-      "enabled": true,
-      "max_items": 8,
-      "note": "微博实时热搜榜TOP50"
-    },
-    {
-      "id": "zhihu-hot",
-      "name": "知乎热榜",
-      "url": "https://60s.viki.moe/v2/zhihu",
-      "type": "api",
-      "category": "热搜",
-      "enabled": true,
-      "max_items": 8,
-      "note": "知乎实时热榜TOP30"
-    },
-    {
-      "id": "baidu-hot",
-      "name": "百度热搜",
-      "url": "https://60s.viki.moe/v2/baidu/hot",
-      "type": "api",
-      "category": "热搜",
-      "enabled": true,
-      "max_items": 8,
-      "note": "百度实时热搜TOP50"
-    },
-    {
-      "id": "douyin-hot",
-      "name": "抖音热榜",
-      "url": "https://60s.viki.moe/v2/douyin",
-      "type": "api",
-      "category": "热搜",
-      "enabled": true,
-      "max_items": 8,
-      "note": "抖音实时热榜TOP50"
-    },
-    {
-      "id": "toutiao",
-      "name": "今日头条",
-      "url": "https://60s.viki.moe/v2/toutiao",
-      "type": "api",
-      "category": "热搜",
-      "enabled": true,
-      "max_items": 8,
-      "note": "今日头条热榜TOP50"
-    },
-    {
-      "id": "bilibili-hot",
-      "name": "B站热榜",
-      "url": "https://60s.viki.moe/v2/bili",
-      "type": "api",
-      "category": "热搜",
-      "enabled": true,
-      "max_items": 8,
-      "note": "B站实时热榜TOP50"
     },
     {
       "id": "zhihu-daily",
