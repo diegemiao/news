@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-05-15T10:05:26.083Z",
+  "last_pruned": "2026-05-15T10:07:47.830Z",
   "seen": {
     "aihot": {
       "guid:cmownduwl00kdslkuwxyxo7l7": 1778230993.092,
@@ -6306,7 +6306,10 @@
       "hash:5050bfb7": 1778839526.041,
       "guid:https://36kr.com/newsflashes/3810314391100931?f=rss": 1778839526.041,
       "url:https://36kr.com/newsflashes/3810314391100931?f=rss": 1778839526.041,
-      "hash:d95bcace": 1778839526.041
+      "hash:d95bcace": 1778839526.041,
+      "guid:https://36kr.com/newsflashes/3810375912283905?f=rss": 1778839667.778,
+      "url:https://36kr.com/newsflashes/3810375912283905?f=rss": 1778839667.778,
+      "hash:ae428942": 1778839667.778
     },
     "people-politics": {
       "guid:http://politics.people.com.cn/n1/2025/0605/c1001-40494898.html": 1778230993.115,
@@ -8857,7 +8860,10 @@
       "hash:197625e1": 1778839526.043,
       "guid:3772348": 1778839526.043,
       "url:https://wallstreetcn.com/articles/3772348": 1778839526.043,
-      "hash:ef083c25": 1778839526.043
+      "hash:ef083c25": 1778839526.043,
+      "guid:3772361": 1778839667.779,
+      "url:https://wallstreetcn.com/articles/3772361": 1778839667.779,
+      "hash:d10563ca": 1778839667.779
     },
     "caixin": {
       "guid:caixin:latest:https://www.caixin.com/2026-05-08/102442045.html": 1778235316.531,
@@ -10753,7 +10759,10 @@
       "hash:4a463941": 1778839526.046,
       "guid:639290238": 1778839526.046,
       "url:https://m.hupu.com/bbs/639290238": 1778839526.046,
-      "hash:d762cb80": 1778839526.046
+      "hash:d762cb80": 1778839526.046,
+      "guid:639292251": 1778839667.782,
+      "url:https://m.hupu.com/bbs/639292251": 1778839667.782,
+      "hash:6f2bf625": 1778839667.782
     },
     "thepaper": {
       "guid:https://m.thepaper.cn/detail/33122989": 1778235316.532,
