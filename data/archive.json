@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-08-16T10:23:25.853Z",
+  "last_pruned": "2026-08-16T10:29:40.313Z",
   "seen": {
     "aihot": {
       "guid:cmsuaf2hr05zgroe0y1e7275v": 1786802379.535,
@@ -780,7 +780,13 @@
       "hash:b5ed62b7": 1786875805.83,
       "guid:https://www.ithome.com/0/990/250.htm": 1786875805.83,
       "url:https://www.ithome.com/0/990/250.htm": 1786875805.83,
-      "hash:f4b8416f": 1786875805.83
+      "hash:f4b8416f": 1786875805.83,
+      "guid:https://www.ithome.com/0/990/363.htm": 1786876180.287,
+      "url:https://www.ithome.com/0/990/363.htm": 1786876180.287,
+      "hash:fcbbe095": 1786876180.287,
+      "guid:https://www.ithome.com/0/990/362.htm": 1786876180.287,
+      "url:https://www.ithome.com/0/990/362.htm": 1786876180.287,
+      "hash:19d3e809": 1786876180.287
     },
     "v2ex-hot": {
       "guid:https://v2ex.com/t/1234566": 1786802379.544,
@@ -860,7 +866,10 @@
       "hash:fa2be0fe": 1786875805.83,
       "guid:https://v2ex.com/t/1234726": 1786875805.83,
       "url:https://v2ex.com/t/1234726": 1786875805.83,
-      "hash:c80e3bcb": 1786875805.83
+      "hash:c80e3bcb": 1786875805.83,
+      "guid:https://v2ex.com/t/1234724": 1786876180.288,
+      "url:https://v2ex.com/t/1234724": 1786876180.288,
+      "hash:2393b1a4": 1786876180.288
     },
     "github-trending": {
       "guid:https://github.com/cactus-compute/needle": 1786802379.544,
@@ -1443,7 +1452,10 @@
       "hash:a1eb2a4f": 1786875805.831,
       "guid:https://www.chinanews.com.cn/ty/2026/08-16/10678649.shtml": 1786875805.831,
       "url:https://www.chinanews.com.cn/ty/2026/08-16/10678649.shtml": 1786875805.831,
-      "hash:6e5a86f1": 1786875805.831
+      "hash:6e5a86f1": 1786875805.831,
+      "guid:https://www.chinanews.com.cn/sh/2026/08-16/10678690.shtml": 1786876180.289,
+      "url:https://www.chinanews.com.cn/sh/2026/08-16/10678690.shtml": 1786876180.289,
+      "hash:88fe1ccd": 1786876180.289
     },
     "hupu-bxj": {
       "guid:https://bbs.hupu.com/641870099.html": 1786802379.548,
