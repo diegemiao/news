@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-08-18T10:28:13.308Z",
+  "last_pruned": "2026-08-18T10:34:47.550Z",
   "seen": {
     "aihot": {
       "guid:cmsuaf2hr05zgroe0y1e7275v": 1786802379.535,
@@ -1815,7 +1815,13 @@
       "hash:4976a94b": 1787048893.278,
       "guid:https://www.ithome.com/0/991/137.htm": 1787048893.278,
       "url:https://www.ithome.com/0/991/137.htm": 1787048893.278,
-      "hash:4b714be9": 1787048893.278
+      "hash:4b714be9": 1787048893.278,
+      "guid:https://www.ithome.com/0/991/283.htm": 1787049287.517,
+      "url:https://www.ithome.com/0/991/283.htm": 1787049287.517,
+      "hash:ffd9bf98": 1787049287.517,
+      "guid:https://www.ithome.com/0/991/281.htm": 1787049287.517,
+      "url:https://www.ithome.com/0/991/281.htm": 1787049287.517,
+      "hash:482ad489": 1787049287.517
     },
     "v2ex-hot": {
       "guid:https://v2ex.com/t/1234566": 1786802379.544,
@@ -3958,7 +3964,22 @@
       "hash:8a27da31": 1787048893.281,
       "guid:3779677": 1787048893.281,
       "url:https://wallstreetcn.com/articles/3779677": 1787048893.281,
-      "hash:0d1bd7b3": 1787048893.281
+      "hash:0d1bd7b3": 1787048893.281,
+      "guid:3779707": 1787049287.52,
+      "url:https://wallstreetcn.com/articles/3779707": 1787049287.52,
+      "hash:2338722c": 1787049287.52,
+      "guid:3779701": 1787049287.52,
+      "url:https://wallstreetcn.com/member/articles/3779701": 1787049287.52,
+      "hash:69ecd0a4": 1787049287.52,
+      "guid:3779704": 1787049287.52,
+      "url:https://wallstreetcn.com/articles/3779704": 1787049287.52,
+      "hash:c4d37727": 1787049287.52,
+      "guid:3779703": 1787049287.52,
+      "url:https://wallstreetcn.com/articles/3779703": 1787049287.52,
+      "hash:732ced0d": 1787049287.52,
+      "guid:3779702": 1787049287.52,
+      "url:https://wallstreetcn.com/articles/3779702": 1787049287.52,
+      "hash:69ef593b": 1787049287.52
     },
     "caixin": {
       "guid:caixin:latest:https://mini.caixin.com/2026-08-15/102474587.html": 1786802379.55,
@@ -4269,7 +4290,10 @@
       "hash:1a6b657a": 1787048893.281,
       "guid:caixin:latest:https://china.caixin.com/2026-08-18/102475267.html": 1787048893.281,
       "url:https://china.caixin.com/2026-08-18/102475267.html": 1787048893.281,
-      "hash:077be49a": 1787048893.281
+      "hash:077be49a": 1787048893.281,
+      "guid:caixin:latest:https://www.caixin.com/2026-08-18/102475397.html": 1787049287.52,
+      "url:https://www.caixin.com/2026-08-18/102475397.html": 1787049287.52,
+      "hash:6038b7c3": 1787049287.52
     },
     "bbc-chinese": {
       "guid:https://www.bbc.com/zhongwen/articles/cn7n5zxmmr1o/simp?at_medium=RSS&at_campaign=rss": 1786802379.55,
@@ -5275,7 +5299,10 @@
       "hash:651e8b4c": 1787048893.283,
       "guid:641929683": 1787048893.283,
       "url:https://m.hupu.com/bbs/641929683": 1787048893.283,
-      "hash:702f9c39": 1787048893.283
+      "hash:702f9c39": 1787048893.283,
+      "guid:641933333": 1787049287.521,
+      "url:https://m.hupu.com/bbs/641933333": 1787049287.521,
+      "hash:c5d69e64": 1787049287.522
     },
     "thepaper": {
       "guid:https://m.thepaper.cn/detail/33790511": 1786802379.555,
@@ -5766,7 +5793,13 @@
       "hash:df732b85": 1787048893.283,
       "guid:https://m.thepaper.cn/detail/33804471": 1787048893.283,
       "url:https://m.thepaper.cn/detail/33804471": 1787048893.283,
-      "hash:04962ce1": 1787048893.283
+      "hash:04962ce1": 1787048893.283,
+      "guid:https://m.thepaper.cn/detail/33805053": 1787049287.522,
+      "url:https://m.thepaper.cn/detail/33805053": 1787049287.522,
+      "hash:a33a5851": 1787049287.522,
+      "guid:https://m.thepaper.cn/detail/33805074": 1787049287.522,
+      "url:https://m.thepaper.cn/detail/33805074": 1787049287.522,
+      "hash:b8fab047": 1787049287.522
     },
     "guokr": {
       "guid:https://www.guokr.com/article/469931/": 1786802379.55,
