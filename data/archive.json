@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-08-20T10:30:35.875Z",
+  "last_pruned": "2026-08-20T10:36:44.356Z",
   "seen": {
     "aihot": {
       "guid:cmsuaf2hr05zgroe0y1e7275v": 1786802379.535,
@@ -152,7 +152,10 @@
       "hash:7567ca0a": 1787188309.007,
       "guid:cmt05zhyg139trodp6bxsy9e2": 1787188309.007,
       "url:https://huggingface.co/blog/LiquidAI/qad": 1787188309.007,
-      "hash:fb3311af": 1787188309.007
+      "hash:fb3311af": 1787188309.007,
+      "guid:cmt1di48c04vuro1q95i06dby": 1787222204.32,
+      "url:https://www.ithome.com/0/992/239.htm": 1787222204.32,
+      "hash:709c2730": 1787222204.32
     },
     "huggingface-papers": {
       "guid:https://arxiv.org/abs/2608.13546": 1786802379.536,
@@ -2838,7 +2841,10 @@
       "hash:37abc4ef": 1787221835.839,
       "guid:https://www.ithome.com/0/992/193.htm": 1787221835.839,
       "url:https://www.ithome.com/0/992/193.htm": 1787221835.839,
-      "hash:26907cb6": 1787221835.839
+      "hash:26907cb6": 1787221835.839,
+      "guid:https://www.ithome.com/0/992/285.htm": 1787222204.322,
+      "url:https://www.ithome.com/0/992/285.htm": 1787222204.322,
+      "hash:a886d898": 1787222204.322
     },
     "v2ex-hot": {
       "guid:https://v2ex.com/t/1234566": 1786802379.544,
@@ -3616,7 +3622,10 @@
       "hash:d62d9f27": 1787221835.84,
       "guid:https://sspai.com/post/113497": 1787221835.84,
       "url:https://sspai.com/post/113497": 1787221835.84,
-      "hash:3a3f9b69": 1787221835.84
+      "hash:3a3f9b69": 1787221835.84,
+      "guid:https://sspai.com/post/113650": 1787222204.324,
+      "url:https://sspai.com/post/113650": 1787222204.324,
+      "hash:d9e1680c": 1787222204.324
     },
     "chinanews": {
       "guid:https://www.chinanews.com.cn/gj/2026/08-15/10678420.shtml": 1786802379.547,
@@ -6187,7 +6196,10 @@
       "hash:cae0f082": 1787221835.842,
       "guid:3779873": 1787221835.842,
       "url:https://wallstreetcn.com/articles/3779873": 1787221835.842,
-      "hash:7f36ceb8": 1787221835.842
+      "hash:7f36ceb8": 1787221835.842,
+      "guid:3152312": 1787222204.326,
+      "url:https://wallstreetcn.com/livenews/3152312": 1787222204.326,
+      "hash:52a1889e": 1787222204.326
     },
     "caixin": {
       "guid:caixin:latest:https://mini.caixin.com/2026-08-15/102474587.html": 1786802379.55,
@@ -8344,7 +8356,10 @@
       "hash:3ab6fbad": 1787221835.845,
       "guid:641964099": 1787221835.845,
       "url:https://m.hupu.com/bbs/641964099": 1787221835.845,
-      "hash:2100269c": 1787221835.845
+      "hash:2100269c": 1787221835.845,
+      "guid:641968815": 1787222204.328,
+      "url:https://m.hupu.com/bbs/641968815": 1787222204.328,
+      "hash:7b0cf91a": 1787222204.328
     },
     "thepaper": {
       "guid:https://m.thepaper.cn/detail/33790511": 1786802379.555,
@@ -9147,7 +9162,16 @@
       "hash:4b3aa3b5": 1787221835.845,
       "guid:https://news.cctv.com/2026/08/19/ARTIgUb3W4jf5JwzVqQLXX6T260819.shtml": 1787221835.845,
       "url:https://news.cctv.com/2026/08/19/ARTIgUb3W4jf5JwzVqQLXX6T260819.shtml": 1787221835.845,
-      "hash:b71fa6df": 1787221835.845
+      "hash:b71fa6df": 1787221835.845,
+      "guid:https://m.thepaper.cn/detail/33818202": 1787222204.328,
+      "url:https://m.thepaper.cn/detail/33818202": 1787222204.328,
+      "hash:71407958": 1787222204.328,
+      "guid:https://m.thepaper.cn/detail/33818458": 1787222204.328,
+      "url:https://m.thepaper.cn/detail/33818458": 1787222204.328,
+      "hash:282a2f2b": 1787222204.328,
+      "guid:https://m.thepaper.cn/detail/33818284": 1787222204.328,
+      "url:https://m.thepaper.cn/detail/33818284": 1787222204.328,
+      "hash:5a8f3a84": 1787222204.328
     },
     "guokr": {
       "guid:https://www.guokr.com/article/469931/": 1786802379.55,
@@ -9553,7 +9577,10 @@
       "hash:84e31e87": 1787192403.997,
       "guid:https://bbs.hupu.com/641963489.html": 1787221835.843,
       "url:https://bbs.hupu.com/641963489.html": 1787221835.843,
-      "hash:c7ae5471": 1787221835.843
+      "hash:c7ae5471": 1787221835.843,
+      "guid:https://bbs.hupu.com/641968763.html": 1787222204.327,
+      "url:https://bbs.hupu.com/641968763.html": 1787222204.327,
+      "hash:f43d5211": 1787222204.327
     },
     "geekpark": {
       "guid:http://www.geekpark.net/news/368852": 1786802379.542,
