@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_pruned": "2026-08-22T10:22:51.383Z",
+  "last_pruned": "2026-08-22T10:30:16.937Z",
   "seen": {
     "aihot": {
       "guid:cmsuaf2hr05zgroe0y1e7275v": 1786802379.535,
@@ -4160,7 +4160,22 @@
       "hash:5ef8393b": 1787365072.101,
       "guid:https://v2ex.com/t/1236340": 1787365072.101,
       "url:https://v2ex.com/t/1236340": 1787365072.101,
-      "hash:169ca677": 1787365072.101
+      "hash:169ca677": 1787365072.101,
+      "guid:https://v2ex.com/t/1236394": 1787394616.918,
+      "url:https://v2ex.com/t/1236394": 1787394616.918,
+      "hash:1f503295": 1787394616.918,
+      "guid:https://v2ex.com/t/1236385": 1787394616.918,
+      "url:https://v2ex.com/t/1236385": 1787394616.918,
+      "hash:7e9cdf15": 1787394616.918,
+      "guid:https://v2ex.com/t/1236355": 1787394616.918,
+      "url:https://v2ex.com/t/1236355": 1787394616.918,
+      "hash:53c885ed": 1787394616.918,
+      "guid:https://v2ex.com/t/1236360": 1787394616.918,
+      "url:https://v2ex.com/t/1236360": 1787394616.918,
+      "hash:33b02f0c": 1787394616.918,
+      "guid:https://v2ex.com/t/1236362": 1787394616.918,
+      "url:https://v2ex.com/t/1236362": 1787394616.918,
+      "hash:0d7e74d2": 1787394616.918
     },
     "github-trending": {
       "guid:https://github.com/cactus-compute/needle": 1786802379.544,
@@ -6624,7 +6639,19 @@
       "hash:77f16d58": 1787394171.363,
       "guid:https://www.chinanews.com.cn/cul/2026/08-22/10682342.shtml": 1787394171.363,
       "url:https://www.chinanews.com.cn/cul/2026/08-22/10682342.shtml": 1787394171.363,
-      "hash:9931e425": 1787394171.363
+      "hash:9931e425": 1787394171.363,
+      "guid:https://www.chinanews.com.cn/cj/2026/08-22/10682381.shtml": 1787394616.918,
+      "url:https://www.chinanews.com.cn/cj/2026/08-22/10682381.shtml": 1787394616.918,
+      "hash:3555e36d": 1787394616.918,
+      "guid:https://www.chinanews.com.cn/cj/2026/08-22/10682385.shtml": 1787394616.918,
+      "url:https://www.chinanews.com.cn/cj/2026/08-22/10682385.shtml": 1787394616.918,
+      "hash:fa263696": 1787394616.918,
+      "guid:https://www.chinanews.com.cn/cj/2026/08-22/10682384.shtml": 1787394616.918,
+      "url:https://www.chinanews.com.cn/cj/2026/08-22/10682384.shtml": 1787394616.918,
+      "hash:401dbd9d": 1787394616.918,
+      "guid:https://www.chinanews.com.cn/aseaninfo/2026/08-22/10682382.shtml": 1787394616.918,
+      "url:https://www.chinanews.com.cn/aseaninfo/2026/08-22/10682382.shtml": 1787394616.918,
+      "hash:6d00920a": 1787394616.918
     },
     "hupu-bxj": {
       "guid:https://bbs.hupu.com/641870099.html": 1786802379.548,
@@ -11005,7 +11032,16 @@
       "hash:991a18cd": 1787394171.366,
       "guid:642010681": 1787394171.366,
       "url:https://m.hupu.com/bbs/642010681": 1787394171.366,
-      "hash:4eb79e0c": 1787394171.366
+      "hash:4eb79e0c": 1787394171.366,
+      "guid:642014264": 1787394616.92,
+      "url:https://m.hupu.com/bbs/642014264": 1787394616.92,
+      "hash:c9f5139f": 1787394616.92,
+      "guid:642014233": 1787394616.92,
+      "url:https://m.hupu.com/bbs/642014233": 1787394616.92,
+      "hash:a1362d6e": 1787394616.92,
+      "guid:642014139": 1787394616.92,
+      "url:https://m.hupu.com/bbs/642014139": 1787394616.92,
+      "hash:ffb591f7": 1787394616.92
     },
     "thepaper": {
       "guid:https://m.thepaper.cn/detail/33790511": 1786802379.555,
@@ -12051,7 +12087,10 @@
       "hash:59023c46": 1787394171.366,
       "guid:https://m.thepaper.cn/detail/33826079": 1787394171.366,
       "url:https://m.thepaper.cn/detail/33826079": 1787394171.366,
-      "hash:01615faa": 1787394171.366
+      "hash:01615faa": 1787394171.366,
+      "guid:https://m.thepaper.cn/detail/33833083": 1787394616.921,
+      "url:https://m.thepaper.cn/detail/33833083": 1787394616.921,
+      "hash:a63f723b": 1787394616.921
     },
     "guokr": {
       "guid:https://www.guokr.com/article/469931/": 1786802379.55,
